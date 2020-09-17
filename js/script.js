@@ -3,6 +3,8 @@ let API = 'https://periodictable.p.rapidapi.com/?rapidapi-key=df774794c4mshb53d7
 axios.get(API)
     .then(function (response) {
 
+        let allData = response.data
+        console.log(allData)
         // START 16Sep code
 
         let atomAll = response.data.map(atomNumber => {
@@ -10,7 +12,6 @@ axios.get(API)
         }).join('')
         // console.log(atomAll)
         document.getElementById('atomTemplate').innerHTML = atomAll
-
 
         let symbolAll = response.data.map(elementSymbol => {
             return `<td>${elementSymbol.symbol} </td>`
@@ -26,10 +27,31 @@ axios.get(API)
 
         // END
 
-    });
+        //for each loop into flexbox
+        // if (r)
+        let tableTemplate = ""
+        allData.forEach((head) => {
+            tableTemplate += "<tr>";
+            tableTemplate += "<td>" + head.atomicNumber + "</td>"
+            tableTemplate += "<td>" + head.symbol + "</td>"
+            tableTemplate += "<td>" + head.name + "</td>"
+            tableTemplate += "<td>" + head.yearDiscovered + "</td>"
+            tableTemplate += "<td>" + head.groupBlock + "</td>"
+            // tableTemplate += "<td>" + head.facts + "</td>"
+            tableTemplate += "<td>" + head.standardState + "</td>"
+            tableTemplate += "<td id='history'>" + head.history + "</td>"
+
+        })
+
+        document.getElementById('data').innerHTML = tableTemplate
+
+        // sort according to groupBlock
 
 
-            // let atomicNumberAll = []
+
+
+
+        // let atomicNumberAll = []
         // let symbolAll = []
         // let elementNameAll = []
 
@@ -126,3 +148,5 @@ axios.get(API)
         // let n = document.getElementById('name')
         // n.innerHTML = `< p > ${y}</p > `.replace(/,/g, '');
         //END    
+
+    })

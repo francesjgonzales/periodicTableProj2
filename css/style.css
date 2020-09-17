@@ -39,8 +39,7 @@ body {
   align-items: center;
 }
 
-td,
-tr {
+td {
   margin: 20px;
   padding: 20px;
   font-size: 15px;
@@ -57,4 +56,14 @@ tr {
   align-items: center;
   background-color: aquamarine;
   text-align: center;
+  background-color: D9FFFF;
 }
+
+#tableHead {
+  margin: 20px;
+  padding: 20px;
+  font-size: 20px;
+  text-align: center;
+}
+
+/* Table Sorting according to Group Blocks */
