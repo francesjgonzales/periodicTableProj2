@@ -5,8 +5,9 @@ axios.get(API)
 
         let allData = response.data
         console.log(allData)
-        // START 16Sep code
 
+
+        // START 16Sep code
         let atomAll = response.data.map(atomNumber => {
             return `<td>${atomNumber.atomicNumber} </td>`
         }).join('')
@@ -24,11 +25,14 @@ axios.get(API)
         }).join('')
         // console.log(symbolAll)
         document.getElementById('elementNameTemplate').innerHTML = elementNameAll
-
         // END
 
-        //for each loop into flexbox
-        // if (r)
+
+        //START for each loop into flexbox
+        //END
+
+
+        // START display JSON data in table 
         let tableTemplate = ""
         allData.forEach((head) => {
             tableTemplate += "<tr>";
@@ -42,11 +46,31 @@ axios.get(API)
             tableTemplate += "<td id='history'>" + head.history + "</td>"
 
         })
-
         document.getElementById('data').innerHTML = tableTemplate
+        console.log(tableTemplate)
 
-        // sort according to groupBlock
+        // END display JSON data
 
+
+        // START groupBy using reduce() according to groupBlock
+        let groupByBlock = (groupBlock, arr) => arr.reduce((cache, allData) =>
+            ({
+                ...cache, [allData[groupBlock]]:
+                    allData[groupBlock] in cache
+                        ? cache[allData[groupBlock]].concat(allData)
+                        : [allData]
+            }),
+            {}
+        )
+        console.log(groupByBlock('groupBlock', allData))
+        //END groupBy using reduce()
+
+
+        // START display groupBlock data in browser
+        let groupElements = groupByBlock('groupBlock', allData)
+        console.log(groupElements)
+        document.getElementById('dataSorted').innerHTML = `${groupElements}`
+        // END display groupBlock
 
 
 

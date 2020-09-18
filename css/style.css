@@ -59,6 +59,10 @@ td {
   background-color: D9FFFF;
 }
 
+th {
+  cursor: pointer;
+}
+
 #tableHead {
   margin: 20px;
   padding: 20px;

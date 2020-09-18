@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Chemistry for kids</title>
+    <title>Science for Kids</title>
     <link
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
@@ -18,10 +18,23 @@
     <link href="css/style.css" rel="stylesheet" />
   </head>
   <body>
+    <nav class="navbar navbar-expand-sm navbar-dark bg-primary">
+        <a class="navbar-brand" href="#">Navbar</a>
+        <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId"
+            aria-expanded="false" aria-label="Toggle navigation"></button>
+        <div class="collapse navbar-collapse" id="collapsibleNavId">
+            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                </li>
+            </ul>
+        </div>
+    </nav>
     <div class="container">
       <div class="row">
         <div class="col-8">
-          <h2>Periodic Table for Kids</h2><br>
+          <h2>Science for Kids</h2><br>
+          <p> We</p>
           <p>
             <h4>How to Read the Periodic Table</h4>
             The top number for each element is its atomic number. This is the number of protons in each atom of that element.<br><br>
@@ -34,7 +47,7 @@
           </p>
         </div>
         <div class="col-4">
-          <div class="card" style="width: 18rem;">
+          <div class="card" style="width: 15rem;">
             <div class="card-body">
               <h5 class="card-title">`${Atomic Number}`</h5>
               <!-- <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6> -->
@@ -65,7 +78,7 @@
     </div>
 
  <!-- Periodic Table for kids -->
-<!-- <div class='container2'>
+<div class='container2'>
   <div class="table-responsive">
         <table class="table">
           <tbody>
@@ -77,11 +90,11 @@
           </tbody>
         </table>
   </div>
-</div> -->
+</div>
 
 
 
-<div class="card" style="width: 18rem;">
+<!-- <div class="card" style="width: 18rem;">
   <div class="card-body">
     <h5 class="card-title">Card title</h5>
     <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
@@ -89,25 +102,31 @@
     <a href="#" class="card-link">Card link</a>
     <a href="#" class="card-link">Another link</a>
   </div>
-</div>
+</div> -->
 
 
-<!-- Group Elements-->
+<!-- All Elements-->
 <table class="table table-hover">
   <thead>
     <tr id="tableHead">
-      <th>Atomic Number</th>
-      <th>Symbol</th>
-      <th>Element Name</th>
-      <th>Year Discovered</th>
-      <th>Group Block</th>
-      <th>Standard State</th>
-      <th>History</th>
+      <th onclick="groupCol(this)">Atomic Number</th>
+      <th onclick="groupCol(this)">Symbol</th>
+      <th onclick="groupCol(this)">Element Name</th>
+      <th onclick="groupCol(this)">Year Discovered</th>
+      <th onclick="groupCol(this)">Group Block</th>
+      <th onclick="groupCol(this)">Standard State</th>
+      <th onclick="groupCol(this)">History</th>
     </tr>
   </thead>
   <tbody id="data">
   </tbody>
 </table>
+
+<!-- Sorted by groupBlock elements -->
+<div id='dataSorted'>
+
+</div>
+
 
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script> 
     <script src="js/jquery.min.js"></script>

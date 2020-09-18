@@ -27,9 +27,11 @@ https://www.pinterest.com/search/pins/?q=Chemistry%20jokes&rs=srs&b_id=BJ6UONvkw
 https://therightwording.com/chemistry-puns-and-jokes-any-science-nerd-will-love/ - 45 CHEMISTRY PUNS AND JOKES ANY SCIENCE NERD WILL LOVE
 https://www.youtube.com/watch?v=5iowJs6MryI - Good Thinking! — Chemical Reactions in Action
 https://sciencenotes.org/ - use this. no indication of copyright restrictions.
+http://www.chem4kids.com/files/elem_pertable.html - use this for key information.
 
 Secondary information about periodic table for kids
-https://www.thoughtco.com/hydrogen-facts-element-1-or-h-607917 - copyrigt
+https://www.thoughtco.com/hydrogen-facts-element-1-or-h-607917 - copyright
+https://www.britannica.com/science/periodic-table/The-periodic-table - use this for secondary info
 https://www.thoughtco.com/periodic-table-for-kids-3955218
 https://www.bbc.com/future/article/20131213-fun-science-tricks-to-try-at-home
 https://www.rsc.org/periodic-table/podcast
@@ -51,3 +53,11 @@ Related videos
 
 youtube video for javascript
 https://www.youtube.com/watch?v=FN_ffvw_ksE
+https://www.youtube.com/watch?v=wxz5vJ1BWrc - javascript search bar
+https://www.youtube.com/watch?v=iBGUyPwm_dM- grouby function
+https://www.youtube.com/watch?v=WMQ2sq1dw6Y&t=214s - display JSON data in table
+https://www.youtube.com/watch?v=HdFYtHJDGd8 - json data array value access
+
+images 
+Photo by MockupEditor.com from Pexels - pexels-mockupeditorcom-205323.jpg
+Photo by MockupEditor.com from Pexels - 
