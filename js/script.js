@@ -8,36 +8,38 @@ axios.get(API)
 
 
         // START 16Sep code
-        let atomAll = response.data.map(atomNumber => {
-            return `<td>${atomNumber.atomicNumber} </td>`
-        }).join('')
-        // console.log(atomAll)
-        document.getElementById('atomTemplate').innerHTML = atomAll
+        // let atomAll = response.data.map(atomNumber => {
+        //     return `<td>${atomNumber.atomicNumber} </td>`
+        // }).join('')
+        // // console.log(atomAll)
+        // document.getElementById('atomTemplate').innerHTML = atomAll
 
-        let symbolAll = response.data.map(elementSymbol => {
-            return `<td>${elementSymbol.symbol} </td>`
-        }).join('')
-        // console.log(symbolAll)
-        document.getElementById('symbolTemplate').innerHTML = symbolAll
+        // let symbolAll = response.data.map(elementSymbol => {
+        //     return `<td>${elementSymbol.symbol} </td>`
+        // }).join('')
+        // // console.log(symbolAll)
+        // document.getElementById('symbolTemplate').innerHTML = symbolAll
 
-        let elementNameAll = response.data.map(elementName => {
-            return `<td>${elementName.name} </td>`
-        }).join('')
-        // console.log(symbolAll)
-        document.getElementById('elementNameTemplate').innerHTML = elementNameAll
+        // let elementNameAll = response.data.map(elementName => {
+        //     return `<td>${elementName.name} </td>`
+        // }).join('')
+        // // console.log(symbolAll)
+        // document.getElementById('elementNameTemplate').innerHTML = elementNameAll
         // END
-        document.getElementById('firstCard').innerHTML =
-            `<div class="card-body">
-                <h5>${atomAll}</h5>
-                <p>${symbolAll}</p>
-                <h4>PHOSPHORUS</h4>
-            </div>`
 
 
-        //START for each loop into flexbox
+        // let elemental = response.data.map(data => {
+        //     return `<div class="card" style="width: 6.5rem;" >
+        //             <h5 id="card-number">${data.atomicNumber}</h5>
+        //             <h2 id="card-symbol">${data.symbol}</h2>
+        //             <h5 id="card-name">${data.name}</h5>
+        //             </div> `
+        // }).join("")
+
+        // document.getElementById('finalCard').innerHTML = elemental
 
 
-        //END
+
 
 
 
@@ -52,9 +54,7 @@ axios.get(API)
             {}
         )
         console.log(groupByBlock('groupBlock', allData))
-        //END groupBy using reduce()
-
-
+        // END groupBy using reduce()
 
         // START display groupBlock data in browser
         let groupElements = groupByBlock('groupBlock', allData)
@@ -65,22 +65,44 @@ axios.get(API)
 
 
         // START display JSON data in table 
-        let tableTemplate = ""
-        allData.forEach((head) => {
-            tableTemplate += "<tr>";
-            tableTemplate += "<td>" + head.atomicNumber + "</td>"
-            tableTemplate += "<td>" + head.symbol + "</td>"
-            tableTemplate += "<td>" + head.name + "</td>"
-            tableTemplate += "<td>" + head.yearDiscovered + "</td>"
-            tableTemplate += "<td>" + head.groupBlock + "</td>"
-            // tableTemplate += "<td>" + head.facts + "</td>"
-            tableTemplate += "<td>" + head.standardState + "</td>"
-            tableTemplate += "<td id='history'>" + head.history + "</td>"
+        // let tableTemplate = ""
+        // allData.forEach((head) => {
+        //     tableTemplate += "<tr>";
+        //     tableTemplate += "<td>" + head.atomicNumber + "</td>"
+        //     tableTemplate += "<td>" + head.symbol + "</td>"
+        //     tableTemplate += "<td>" + head.name + "</td>"
+        //     tableTemplate += "<td>" + head.yearDiscovered + "</td>"
+        //     tableTemplate += "<td>" + head.groupBlock + "</td>"
+        //     // tableTemplate += "<td>" + head.facts + "</td>"
+        //     tableTemplate += "<td>" + head.standardState + "</td>"
+        //     tableTemplate += "<td id='history'>" + head.history + "</td>"
 
-        })
-        document.getElementById('data').innerHTML = tableTemplate
+        // })
+        // document.getElementById('data').innerHTML = tableTemplate
         // console.log(tableTemplate)
         // END display JSON data
+
+
+
+        //START map flexbox
+        let elemental = response.data.map(data => {
+            return `<div class="card" style="width: 10rem;" >
+                    <h5 id="card-number">${data.atomicNumber}</h5>
+                    <h2 id="card-symbol">${data.symbol}</h2>
+                    <h5 id="card-name">${data.name}</h5>
+                    </div> `
+        }).join("")
+
+        document.getElementById('finalCard').innerHTML = elemental
+
+        //END
+
+
+
+        //START for loop
+
+        //END
+
 
 
 
@@ -101,3 +123,5 @@ $('#return-to-top').click(function () {      // When arrow is clicked
         scrollTop: 0                       // Scroll to top of body
     }, 500);
 });
+
+
