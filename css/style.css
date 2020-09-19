@@ -6,16 +6,46 @@
   box-sizing: border-box;
 }
 
-body {
+body,
+.container,
+.mainImg,
+#mainTxt {
   background-color: white;
   align-content: center;
-  margin: 20px;
-  padding: 20px;
+  margin: auto;
+  padding: auto;
   font-family: "Roboto Mono", monospace;
 }
 
+.card-text,
+#header {
+  font-size: 4rem;
+  text-align: center;
+  color: #318ddc;
+  align-items: center;
+}
+
+.table:hover {
+  background-color: #f9be04;
+}
+
+#para,
+ul {
+  font-size: 2rem;
+}
+#mainChem {
+  background-color: #318ddc;
+  text-align: left;
+  color: white;
+  font-size: 2rem;
+}
+
+mark {
+  background-color: #f9be04;
+}
 .container1 {
-  background-color: aquamarine;
+  margin: auto;
+  margin: auto;
 }
 .container2 {
   background-color: aquamarine;
@@ -25,11 +55,6 @@ body {
   margin: 5px;
   padding: 5px;
   font-size: 20px;
-  text-align: center;
-}
-
-.card-text {
-  font-size: 35pt;
   text-align: center;
 }
 

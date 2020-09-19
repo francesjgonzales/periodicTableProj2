@@ -1,3 +1,4 @@
+# Science for Kids
 Learning Science
 
 Introduce the foundation of Chemistry to teach to kids. 
@@ -15,6 +16,9 @@ How I started.
 Periodic Table - reference layout 
 https://pubchem.ncbi.nlm.nih.gov/periodic-table/#view=table
 https://ptable.com/?lang=en#Properties
+
+Supporting info on when kids start to explore science
+https://www.moe.gov.sg/docs/default-source/document/education/syllabuses/sciences/files/science-primary-2014.pdf
 
 Primary information about periodic table for kids 
 https://www.youtube.com/headsqueeze/featured - use this
@@ -61,3 +65,11 @@ https://www.youtube.com/watch?v=HdFYtHJDGd8 - json data array value access
 images 
 Photo by MockupEditor.com from Pexels - pexels-mockupeditorcom-205323.jpg
 Photo by MockupEditor.com from Pexels - 
+https://www.freepik.com/premium-vector/science-poster-states-matter_5768021.htm#page=1&query=gas%20liquid%20solid&position=0 - premium subscription
+https://www.freepik.com/free-vector/collection-spaceships-planets-space-theme_9648498.htm#page=1&query=earth&position=9
+https://www.freepik.com/free-vector/cartoon-earth-planet-light-concept_9587468.htm#page=1&query=earth&position=26 - detailed illustration of earth
+https://www.freepik.com/free-vector/science-icon-collection_764934.htm#page=1&query=chemistry&position=38 - chemistry elements 
+https://www.freepik.com/free-vector/science-education-background_7436035.htm - used this for chemistry elements
+
+
+used illustrator to interpret key visuals

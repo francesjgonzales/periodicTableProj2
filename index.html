@@ -18,22 +18,56 @@
     <link href="css/style.css" rel="stylesheet" />
   </head>
   <body>
-    <nav class="navbar navbar-expand-sm navbar-dark bg-primary">
-        <a class="navbar-brand" href="#">Navbar</a>
-        <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId"
-            aria-expanded="false" aria-label="Toggle navigation"></button>
-        <div class="collapse navbar-collapse" id="collapsibleNavId">
-            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-                <li class="nav-item active">
-                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-                </li>
-            </ul>
-        </div>
+    <nav class="navbar fixed-top navbar">
+      <a class="navbar-brand" href="#">Chemistry</a>
+      <a class="navbar-brand" href="#">Matter</a>
+      <a class="navbar-brand" href="#">Atom</a>
+      <a class="navbar-brand" href="#">Elements & Reaction</a>
+      <a class="navbar-brand" href="#">Periodic Table</a>
+      <a class="navbar-brand" href="#">Young Chemist</a>
     </nav>
+
     <div class="container">
+      <div id='mainImg'>
+        <img src="/img/mainImg.png" class="img-fluid" alt="Responsive image">
+      </div>
+
+    <div class="container">
+      <p id='header'>What is Chemistry?</h3>
+      <div class='row'>
+        <div class="col-7">
+        <p id='para'>Chemistry is the scientific study of <mark>matter</mark>. <br><br>
+          <table class="table table-hover">
+            <tbody>
+              <tr>
+                <td id='mainChem' >As a chemist, you might look at the amount of space an object can fill. 
+              </tr>
+                <td id='mainChem' >As a chemist, you might measure the energy of atoms (state of matter). 
+              </tr>
+                <td id='mainChem'  >Chemists also look at the way acids can dissolve certain compounds (reactions).
+                </tr>        
+            </tbody>
+          </table>
+
+          <br>
+            <p id='para'>Chemistry always goes back to the study of matter. Over thousands of years, chemists have come to understand many different ways that matter changes and moves across the Universe.</p></p>
+        </div> 
+
+        <div class='col-4'>
+          <img src="/img/4980Licensed-Freepik-2.jpg">
+        </div>   
+      </div>
+    </div>  
+
+    
+<div class='container'>
+
+</div>
       <div class="row">
-        <div class="col-8">
-          <h2>Science for Kids</h2><br>
+        <div class="col-8" id=>
+
+
+          <h2>What is Chemistr</h2><br>
           <p> We</p>
           <p>
             <h4>How to Read the Periodic Table</h4>
@@ -62,7 +96,7 @@
       </div>
 
  <!-- Periodic Table for kids -->
- <div class='container2'>
+ <!-- <div class='container2'>
   <div class="table-responsive">
         <table class="table">
           <tbody>
@@ -74,8 +108,8 @@
           </tbody>
         </table>
   </div>
-</div>
-    </div>
+</div> -->
+
 
  <!-- Periodic Table for kids -->
 <div class='container2'>
@@ -93,20 +127,17 @@
 </div>
 
 
+<!-- Sorted by groupBlock elements -->
+<div class='container'>
+  <div id='dataSorted'>
 
-<!-- <div class="card" style="width: 18rem;">
-  <div class="card-body">
-    <h5 class="card-title">Card title</h5>
-    <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
-    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-    <a href="#" class="card-link">Card link</a>
-    <a href="#" class="card-link">Another link</a>
+
   </div>
-</div> -->
+</div>
 
 
 <!-- All Elements-->
-<table class="table table-hover">
+<!-- <table class="table table-hover">
   <thead>
     <tr id="tableHead">
       <th onclick="groupCol(this)">Atomic Number</th>
@@ -120,12 +151,9 @@
   </thead>
   <tbody id="data">
   </tbody>
-</table>
+</table> -->
 
-<!-- Sorted by groupBlock elements -->
-<div id='dataSorted'>
 
-</div>
 
 
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script> 
