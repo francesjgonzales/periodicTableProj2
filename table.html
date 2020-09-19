@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/93cb64c8b1.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+    />
+    <link href="css/bootstrap.min.css" />
+    <link href="css/style.css" rel="stylesheet" />
+    <title>Science for Kids</title>
+  </head>
+  <body>
+    <!-- Return to Top -->
+    <a href="javascript:" id="return-to-top"><i class="icon-chevron-up"></i></a>
+    <nav class="navbar fixed-top">
+      <a class="navbar-brand" href="#"
+        ><img src="img/SFK-2.svg" alt="gertieslogo" height="50"
+      /></a>
+      <a class="navbar-brand" href="#">Chemistry</a>
+      <a class="navbar-brand" href="#">Matter</a>
+      <a class="navbar-brand" href="#">Atom</a>
+      <a class="navbar-brand" href="#">Elements & Reaction</a>
+      <a class="navbar-brand" href="#">Periodic Table</a>
+      <a class="navbar-brand" href="#">Young Chemist</a>
+    </nav>
+
+
+<!-- Periodic Table -->
+<div class='container3'>
+    <p id='header'>Elements as Building Blocks</h3>
+      <p id='para' style='text-align: center;'>The periodic table is organized like a big grid.</p>
+
+
+      <div class="card">
+        <div class="card-body">
+          This is some text within a card body.
+        </div>
+      </div>
+
+<div id='firstCard'>
+    
+</div>
+
+
+      <br>
+      <br>
+      <br>
+        <p id='subHeader'>Elements are made of similar atoms.</p>
+        <p id='para'><br>
+    
+          We want to say the atoms are exactly the same, but that’s not quite true. An element is made of atoms that have the same number of protons. If you have a batch of atoms and they all have the same number of <mark>protons</mark>, they are all one element.<br><br>
+          
+          For example, if the atoms all have four protons, they are beryllium (Be) atoms. Some of those atoms may have four electrons (neutral). Some atoms may have three electrons, leaving the atom with a positive charge (ions). Those ions are still considered beryllium atoms. <mark>Neutrons</mark> work the same way. You may have four neutrons, but you might also have three or five neutrons. Atoms with the same number of protons and different numbers of neutrons are called isotopes of an element. Isotopes and ions are still the same element even though they have different numbers of neutrons and electrons.</p>        
+  </div>
+
+
+
+    <!-- Periodic Table for kids -->
+    <div class="container2">
+      <div class="table-responsive">
+        <table class="table">
+          <tbody>
+            <tr id="atomTemplate"></tr>
+            <tr id="symbolTemplate"></tr>
+            <tr id="elementNameTemplate"></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- Periodic Table for kids -->
+    <div class="container2">
+      <div class="table-responsive">
+        <table class="table">
+          <tbody>
+            <tr id="atomTemplate"></tr>
+            <tr id="symbolTemplate"></tr>
+            <tr id="elementNameTemplate"></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- Sorted by groupBlock elements -->
+    <div class="container">
+      <div id="dataSorted"></div>
+    </div>
+
+    <!-- All Elements-->
+    <table class="table table-hover">
+      <thead>
+        <tr id="tableHead">
+          <th onclick="groupCol(this)">Atomic Number</th>
+          <th onclick="groupCol(this)">Symbol</th>
+          <th onclick="groupCol(this)">Element Name</th>
+          <th onclick="groupCol(this)">Year Discovered</th>
+          <th onclick="groupCol(this)">Group Block</th>
+          <th onclick="groupCol(this)">Standard State</th>
+          <th onclick="groupCol(this)">History</th>
+        </tr>
+      </thead>
+      <tbody id="data"></tbody>
+    </table>
+
+    <!--footer-->
+    <div class="footer-bottom">
+      <div class="row">
+        <div class="col-sm-12">
+          <p style="text-align: center">
+            Chemistry content by Chem4Kidz.com for bootcamp project only.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>
