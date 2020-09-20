@@ -40,7 +40,7 @@ axios.get(API)
 
     });
 
-axios.get(API)
+axios.get('https://periodictable.p.rapidapi.com/?rapidapi-key=df774794c4mshb53d706f8e64e5cp1f2e62jsn27e7fe71a7d2')
     .catch(function (error) {
         if (error.response) {
             // The request was made and the server responded with a status code
