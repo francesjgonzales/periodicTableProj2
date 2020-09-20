@@ -70,6 +70,10 @@ ul {
   font-size: 2rem;
 }
 
+#myDiv {
+  text-align: center;
+}
+
 mark {
   background-color: #f9be04;
 }
