@@ -8,38 +8,24 @@ axios.get(API)
 
 
         // START 16Sep code
-        // let atomAll = response.data.map(atomNumber => {
-        //     return `<td>${atomNumber.atomicNumber} </td>`
-        // }).join('')
-        // // console.log(atomAll)
-        // document.getElementById('atomTemplate').innerHTML = atomAll
+        let atomAll = response.data.map(atomNumber => {
+            return `<td>${atomNumber.atomicNumber} </td>`
+        }).join('')
+        // console.log(atomAll)
+        document.getElementById('atomTemplate').innerHTML = atomAll
 
-        // let symbolAll = response.data.map(elementSymbol => {
-        //     return `<td>${elementSymbol.symbol} </td>`
-        // }).join('')
-        // // console.log(symbolAll)
-        // document.getElementById('symbolTemplate').innerHTML = symbolAll
+        let symbolAll = response.data.map(elementSymbol => {
+            return `<td>${elementSymbol.symbol} </td>`
+        }).join('')
+        // console.log(symbolAll)
+        document.getElementById('symbolTemplate').innerHTML = symbolAll
 
-        // let elementNameAll = response.data.map(elementName => {
-        //     return `<td>${elementName.name} </td>`
-        // }).join('')
-        // // console.log(symbolAll)
-        // document.getElementById('elementNameTemplate').innerHTML = elementNameAll
+        let elementNameAll = response.data.map(elementName => {
+            return `<td>${elementName.name} </td>`
+        }).join('')
+        // console.log(symbolAll)
+        document.getElementById('elementNameTemplate').innerHTML = elementNameAll
         // END
-
-
-        // let elemental = response.data.map(data => {
-        //     return `<div class="card" style="width: 6.5rem;" >
-        //             <h5 id="card-number">${data.atomicNumber}</h5>
-        //             <h2 id="card-symbol">${data.symbol}</h2>
-        //             <h5 id="card-name">${data.name}</h5>
-        //             </div> `
-        // }).join("")
-
-        // document.getElementById('finalCard').innerHTML = elemental
-
-
-
 
 
 
@@ -86,11 +72,11 @@ axios.get(API)
 
         //START map flexbox
         let elemental = response.data.map(data => {
-            return `<div class="card" style="width: 10rem;" >
+            return `<div class="card" style="width: 10rem;" id="${data.groupBlock}">
                     <h5 id="card-number">${data.atomicNumber}</h5>
                     <h2 id="card-symbol">${data.symbol}</h2>
                     <h5 id="card-name">${data.name}</h5>
-                    </div> `
+                    </div>`
         }).join("")
 
         document.getElementById('finalCard').innerHTML = elemental
@@ -99,12 +85,19 @@ axios.get(API)
 
 
 
-        //START for loop
+        //START showMore
+        let elemental2 = response.data.map(data => {
+            return `<div class="card" id="${data.groupBlock}" style="width: 50rem">
+                    <h1 id="card-symbol">${data.symbol}</h1>
+                    <h3 id="card-name">${data.name}</h3>
+                    <h5 id="card-groupBlock">${data.groupBlock}</h5>
+                    <p id="history">${data.history}</p>
+                    </div>`
+        }).join("")
+
+        document.getElementById('showMore').innerHTML = elemental2
 
         //END
-
-
-
 
 
     })

@@ -32,25 +32,60 @@
       <a class="navbar-brand" href="#"
         ><img src="img/SFK-2.svg" alt="science-logo" height="28"
       /></a>
-      <a class="navbar-brand" href="#">Chemistry</a>
-      <a class="navbar-brand" href="#">Matter</a>
-      <a class="navbar-brand" href="#">Atom</a>
-      <a class="navbar-brand" href="#">Elements & Reaction</a>
-      <a class="navbar-brand" href="#">Periodic Table</a>
-      <a class="navbar-brand" href="#">Young Chemist</a>
+      <a class="navbar-brand" href="#chemistry">Chemistry</a>
+      <a class="navbar-brand" href="#matter">Matter</a>
+      <a class="navbar-brand" href="#atom">Atom</a>
+      <a class="navbar-brand" href="#elements">Elements & Reaction</a>
+      <a class="navbar-brand" href="#periodicTable">Periodic Table</a>
+      <a class="navbar-brand" href="#youngChemist">Young Chemist</a>
     </nav>
 
 
 <!-- Periodic Table -->
-<div class='container3'>
+<div class='container3' id='periodicTable'>
     <p id='header'>Elements as Building Blocks</h3>
       <p id='para' style='text-align: center;'>The periodic table is organized like a big grid.</p>
 
+      <div class = "flexbox-container" id="groupNumbers">
+
+        <div style="width: 8rem">1</div>
+        <div class='card'style="width: 10rem">2</div>
+        <div class='card'style="width: 10rem">3</div>
+        <div class='card'style="width: 10rem">4</div>
+        <div class='card'style="width: 10rem">5</div>
+        <div class='card'style="width: 10rem">6</div>
+        <div class='card'style="width: 10rem" >7</div>
+        <div class='card'style="width: 10rem">8</div>
+        <div class='card'style="width: 10rem">9</div>
+        <div class='card'style="width: 10rem">10</div>
+        <div class='card'style="width: 10rem">11</div>
+        <div class='card'style="width: 10rem">12</div>
+        <div class='card'style="width: 10rem">13</div>
+        <div class='card'style="width: 10rem">14</div>
+        <div class='card'style="width: 10rem">15</div>
+        <div class='card'style="width: 10rem">16</div>
+        <div class='card'style="width: 10rem">17</div>
+        <div class='card'style="width: 10rem">18</div>
+      </div>
+
+
+      
     <div class = 'flexbox-container' id='finalCard'>
-        <div class="card" >
+        <div class="card">
             <h5 id="card-number">15</h5>
             <h1 id="card-symbol">P</h1>
             <h3 id="card-name">PHOSPHORUS</h3>
+        </div>
+    </div>    
+      
+
+
+    <div class = 'flexbox-container' id='showMore'>
+        <div class="card" style="width: 50rem">
+          <h1 id="card-symbol">1</h1>
+          <h3 id="card-name">Hydrogen</h3>
+          <h5 id="card-groupBlock">nonmetal</h5>
+          <p id="history">"The name derives from the Greek word hydro for water and genes for forming because it burned in air to form water. Hydrogen was discovered by the English physicist Henry Cavendish in 1766.<br/> <br>Scientists had been producing hydrogen for years before it was recognized as an element. Written records indicate that Robert Boyle produced hydrogen gas as early as 1671 while experimenting with iron and acids. Hydrogen was first recognized as a distinct element by Henry Cavendish in 1766.Composed of a single proton and a single electron, hydrogen is the simplest and most abundant element in the universe. It is estimated that 90% of the visible universe is composed of hydrogen."</p>
         </div>
     </div>    
 </div>
@@ -78,13 +113,14 @@
 
 
     <!-- Sorted by groupBlock elements -->
-    <div class="container">
+    <div class="container"> 
       <div id="dataSorted"></div>
     </div>
 
 
+
     <!-- All Elements-->
-    <!-- <div class='container'>
+    <div class='container'>
     <table class="table table-hover">
       <thead>
         <tr id="tableHead">
@@ -99,12 +135,21 @@
       </thead>
       <tbody id="data"></tbody>
     </table>
-    </div> -->
+    </div>
 
 
+<!-- more data showing -->
+  <div class="container">
+    <div id="moreInfo">
 
+    </div>
+    </div>
+  </div>
+
+
+  
     <!-- Fun Experiments -->
-    <div class='container2'>
+    <div class='container' id='youngChemist'>
         <p id='header'>Young Chemist</h3>
           <p id='para' style='text-align: center;'>Make these fun experiments that you can do at home.</p>
 
