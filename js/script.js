@@ -10,9 +10,9 @@ axios.get(API)
         //START map flexbox
         let elemental = response.data.map(data => {
             return `<div class="card" style="width: 10rem;" id="${data.groupBlock}">
-                    <h5 id="card-number">${data.atomicNumber}</h5>
-                    <h2 id="card-symbol">${data.symbol}</h2>
-                    <h5 id="card-name">${data.name}</h5>
+                    <h5>${data.atomicNumber}</h5>
+                    <h2>${data.symbol}</h2>
+                    <h5>${data.name}</h5>
                     </div>`
         }).join("")
 

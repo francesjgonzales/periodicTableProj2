@@ -15,8 +15,8 @@
       rel="stylesheet"
       href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
     />
-    <link href="css/bootstrap.min.css" />
-    <link href="css/style.css" rel="stylesheet" />
+    <link href="css/bootstrap.min.css" rel="stylesheet"/>
+    <link href="css/style.css" rel="stylesheet"/>
     <title>Science for Kids</title>
   </head>
 
@@ -42,7 +42,7 @@
     <div class="container1">
       <div id='mainImg'>
         <img src="/img/mainImg.png" class="img-fluid" alt="Responsive image">
-        <img src="/img/4980Licensed-Freepik.jpg" class="img-fluid" alt="Responsive image">
+        <img src="/img/4980Licensed-Freepik-copy.jpg" class="img-fluid" alt="Responsive image">
       </div>
       </div>
 
@@ -52,7 +52,7 @@
 
 <!-- intro to chemistry -->
     <div class="container2" id="chemistry">
-      <p id='header'>What is Chemistry?</h3>
+      <p id='header'>What is Chemistry?</p>
         <p id='para' style='text-align: center;'> Chemistry is the scientific study of <mark>matter</mark>.</p>
 
       <div class="row">
@@ -60,7 +60,7 @@
           <div class="card" style="width: 25rem;">
             <img class="card-img-top" src="img/atom.png" alt="Card image cap">
             <div class="card-body">
-              <p class="card-text"id='para'>As a chemist, you might look at the amount of space an object can fill. </p>
+              <p class="card-text" id='paraText'>As a chemist, you might look at the amount of space an object can fill. </p>
             </div>
           </div>
         </div>
@@ -68,7 +68,7 @@
           <div class="card" style="width: 25rem;">
             <img class="card-img-top" src="img/microscope.png" alt="Card image cap">
             <div class="card-body">
-              <p class="card-text"id='para'>As a chemist, you might measure the energy of atoms (state of matter). </p>
+              <p class="card-text" id='para'>As a chemist, you might measure the energy of atoms (state of matter). </p>
             </div>
           </div>
         </div>
@@ -82,10 +82,9 @@
         </div>
       </div>
       <br>
-            <p id='para' style='text-align: center;'>Chemistry always goes back to the study of matter. Over thousands of years, chemists have come to understand many different ways that matter changes and moves across the Universe.</p></p>
+            <p id='para' style='text-align: center;'>Chemistry always goes back to the study of matter. Over thousands of years, chemists have come to understand many different ways that matter changes and moves across the Universe.</p>
         </div> 
 
-      </div>
     </div>  
 
 
@@ -107,43 +106,44 @@
                       
             <p id='para'><mark>Matter takes up space.</mark> Even the smallest particles and pieces of atoms take up some space. <mark>Matter also has a mass.</mark> Technically, mass is the amount of matter you have. For now, you can think of mass in terms of weight. You don’t need chemistry to tell you an elephant has a lot of mass, a butterfly has less mass, and an atom has even less mass. Holding an object will tell you the object’s weight and give you a good idea of its mass when compared to other objects.<br><br>
             
-              Just so you know, <mark>mass and weight are different.</mark> Mass is an amount of matter that is the same everywhere in the Universe. One kilogram of iron (Fe) will have the same mass on the Earth or the Moon. Weight is based on the gravity of the environment. That kilogram of iron will weigh more on the Earth because the Earth has a stronger gravity than the Moon. Since Jupiter is much larger than the Earth (stronger gravitational force), the weight of that iron on Jupiter will be much heavier. The mass will be the same.</p></p>        
+              Just so you know, <mark>mass and weight are different.</mark> Mass is an amount of matter that is the same everywhere in the Universe. One kilogram of iron (Fe) will have the same mass on the Earth or the Moon. Weight is based on the gravity of the environment. That kilogram of iron will weigh more on the Earth because the Earth has a stronger gravity than the Moon. Since Jupiter is much larger than the Earth (stronger gravitational force), the weight of that iron on Jupiter will be much heavier. The mass will be the same.</p>        
     </div>
 
 
     <!-- Atom in Chemistry -->
     <div class='container3' id='atom'>
-      <p id='header'>Atoms in Chemistry</h3>
+      <p id='header'>Atoms in Chemistry</p>
         <p id='para' style='text-align: center;'>You are made up of different types of Atoms</p>
         <div class='row'>
           
+          
           <div class="col-2">
             <div class="card" >
-              <button type="button" class="btn" onclick="hydrogen()">
               <div class="card-body">
                 <h5 class="card-title">1</h5>
                 <p class="card-text">H</p>
                 <h4 class="card-title">HYDROGEN</h4>
               </div>
             </div>
-            </button>
+            <button type="button" class="btn" onclick="hydrogen()">More info</button>  
           </div>
+          
 
           <div class="col-2">
             <div class="card" >
-              <button type="button" class="btn" onclick="carbon()">  
               <div class="card-body">
                 <h5 class="card-title">6</h5>
                 <p class="card-text">C</p>
                 <h4 class="card-title">CARBON</h4>
               </div>
             </div>
-            </button>
+            <button type="button" class="btn" onclick="carbon()">More info</button>
           </div>
+
 
           <div class="col-2">
             <div class="card" >
-              <button type="button" class="btn" onclick="oxygen()">
+              
               <div class="card-body">
                 <h5 class="card-title">8</h5>
                 <!-- <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6> -->
@@ -151,12 +151,12 @@
                 <h4 class="card-title">OXYGEN</h4>
               </div>
             </div>
-            </button>
+            <button type="button" class="btn" onclick="oxygen()">More info</button>
           </div>
 
           <div class="col-2">
             <div class="card" >
-              <button type="button" class="btn" onclick="nitrogen()">
+              
               <div class="card-body">
                 <h5 class="card-title">7</h5>
                 <!-- <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6> -->
@@ -164,12 +164,12 @@
                 <h4 class="card-title">NITROGEN</h4>
               </div>
             </div>
-            </button>
+            <button type="button" class="btn" onclick="nitrogen()">More info</button>
           </div>
 
           <div class="col-2">
             <div class="card" >
-              <button type="button" class="btn" onclick="calcium()">
+              
               <div class="card-body">
                 <h5 class="card-title">20</h5>
                 <!-- <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6> -->
@@ -177,20 +177,19 @@
                 <h4 class="card-title">CALCIUM</h4>
               </div>
             </div>
-            </button>
+            <button type="button" class="btn" onclick="calcium()">More info</button>
           </div>
 
           <div class="col-2">
             <div class="card" >
-              <button type="button" class="btn" onclick="phosphorus()">
               <div class="card-body">
                 <h5 class="card-title">15</h5>
                 <!-- <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6> -->
                 <p class="card-text">P</p>
                 <h4 class="card-title">PHOSPHORUS</h4>
               </div>
+              <button style="background-color: aqua;" type="button" class="btn" onclick="phosphorus()">Check this out</button>
             </div>
-            </button>
           </div>
                    
           </div>
@@ -210,7 +209,7 @@
             <!-- info about Carbon -->
             <div class='col'>
             <div id="myDIV">
-             <div class="card" id="carbon" style="align-content: center; background-color: none;" >
+             <div class="card" id="carbon" style="align-content: center;" >
                <h1 id="card-symbol">C</h1>
                <h3 id="card-name">Carbon</h3>
                <h5 id="card-groupBlock">nonmetal</h5>
@@ -222,7 +221,7 @@
             <!-- info about Oxygen -->
             <div class='col'>
             <div id="myDIV">
-             <div class="card" id="oxygen" style="align-content: center; background-color: none;" >
+             <div class="card" id="oxygen" style="align-content: center;" >
                <h1 id="card-symbol">O</h1>
                <h3 id="card-name">Oxygen</h3>
                <h5 id="card-groupBlock">nonmetal</h5>
@@ -233,7 +232,7 @@
             <!-- info about Nitrogen -->
             <div class='col'>
             <div id="myDIV">
-             <div class="card" id="nitrogen" style="align-content: center; background-color: none;" >
+             <div class="card" id="nitrogen" style="align-content: center;" >
                <h1 id="card-symbol">N</h1>
                <h3 id="card-name">Nitrogen</h3>
                <h5 id="card-groupBlock">nonmetal</h5>
@@ -244,7 +243,7 @@
             <!-- info about Calcium -->
             <div class='col'>
             <div id="myDIV">
-             <div class="card" id="calcium" style="align-content: center; background-color: none;" >
+             <div class="card" id="calcium" style="align-content: center;" >
                <h1 id="card-symbol">Ca</h1>
                <h3 id="card-name">Calcium</h3>
                <h5 id="card-groupBlock">alkaline earth metal</h5>
@@ -255,7 +254,7 @@
             <!-- info about phosphorus -->
             <div class='col'>
             <div id="myDIV">
-             <div class="card" id="phosphorus" style="align-content: center; background-color: none;" >
+             <div class="card" id="phosphorus" style="align-content: center;" >
                <h1 id="card-symbol">P</h1>
                <h3 id="card-name">Phosphorus</h3>
                <h5 id="card-groupBlock">nonmetal</h5>
@@ -341,10 +340,10 @@
     </div>
 
 
-
+    <script src="js/script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script> 
     <script src="js/jquery.min.js"></script>
     <script src="js/bootstrap.bundle.min.js"></script>
-    <script src="js/script.js"></script>
+
   </body>
 </html>
