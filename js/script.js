@@ -7,69 +7,6 @@ axios.get(API)
         console.log(allData)
 
 
-        // START 16Sep code
-        let atomAll = response.data.map(atomNumber => {
-            return `<td>${atomNumber.atomicNumber} </td>`
-        }).join('')
-        // console.log(atomAll)
-        document.getElementById('atomTemplate').innerHTML = atomAll
-
-        let symbolAll = response.data.map(elementSymbol => {
-            return `<td>${elementSymbol.symbol} </td>`
-        }).join('')
-        // console.log(symbolAll)
-        document.getElementById('symbolTemplate').innerHTML = symbolAll
-
-        let elementNameAll = response.data.map(elementName => {
-            return `<td>${elementName.name} </td>`
-        }).join('')
-        // console.log(symbolAll)
-        document.getElementById('elementNameTemplate').innerHTML = elementNameAll
-        // END
-
-
-
-        // START groupBy using reduce() according to groupBlock
-        let groupByBlock = (groupBlock, arr) => arr.reduce((cache, allData) =>
-            ({
-                ...cache, [allData[groupBlock]]:
-                    allData[groupBlock] in cache
-                        ? cache[allData[groupBlock]].concat(allData)
-                        : [allData]
-            }),
-            {}
-        )
-        console.log(groupByBlock('groupBlock', allData))
-        // END groupBy using reduce()
-
-        // START display groupBlock data in browser
-        let groupElements = groupByBlock('groupBlock', allData)
-        console.log(groupElements)
-        document.getElementById('dataSorted').innerHTML = `${groupElements} `
-        // END display groupBlock
-
-
-
-        // START display JSON data in table 
-        // let tableTemplate = ""
-        // allData.forEach((head) => {
-        //     tableTemplate += "<tr>";
-        //     tableTemplate += "<td>" + head.atomicNumber + "</td>"
-        //     tableTemplate += "<td>" + head.symbol + "</td>"
-        //     tableTemplate += "<td>" + head.name + "</td>"
-        //     tableTemplate += "<td>" + head.yearDiscovered + "</td>"
-        //     tableTemplate += "<td>" + head.groupBlock + "</td>"
-        //     // tableTemplate += "<td>" + head.facts + "</td>"
-        //     tableTemplate += "<td>" + head.standardState + "</td>"
-        //     tableTemplate += "<td id='history'>" + head.history + "</td>"
-
-        // })
-        // document.getElementById('data').innerHTML = tableTemplate
-        // console.log(tableTemplate)
-        // END display JSON data
-
-
-
         //START map flexbox
         let elemental = response.data.map(data => {
             return `<div class="card" style="width: 10rem;" id="${data.groupBlock}">
@@ -87,7 +24,7 @@ axios.get(API)
 
         //START showMore
         let elemental2 = response.data.map(data => {
-            return `<div class="card" id="${data.groupBlock}" style="width: 50rem">
+            return `<div class="card" id="${data.groupBlock}" style="width: 45rem">
                     <h1 id="card-symbol">${data.symbol}</h1>
                     <h3 id="card-name">${data.name}</h3>
                     <h5 id="card-groupBlock">${data.groupBlock}</h5>
@@ -100,7 +37,30 @@ axios.get(API)
         //END
 
 
-    })
+
+    });
+
+axios.get('/user/API')
+    .catch(function (error) {
+        if (error.response) {
+            // The request was made and the server responded with a status code
+            // that falls out of the range of 2xx
+            console.log(error.response.data);
+            console.log(error.response.status);
+            console.log(error.response.headers);
+        } else if (error.request) {
+            // The request was made but no response was received
+            // `error.request` is an instance of XMLHttpRequest in the browser and an instance of
+            // http.ClientRequest in node.js
+            console.log(error.request);
+        } else {
+            // Something happened in setting up the request that triggered an Error
+            console.log('Error', error.message);
+        }
+        console.log(error.config);
+    });
+
+
 
 
 // ===== Scroll to Top ==== 
@@ -117,4 +77,62 @@ $('#return-to-top').click(function () {      // When arrow is clicked
     }, 500);
 });
 
+
+function hydrogen() {
+    var x = document.getElementById("hydrogen");
+    if (x.style.display === "none") {
+        x.style.display = "block";
+    } else {
+        x.style.display = "none";
+    }
+}
+function carbon() {
+    var x = document.getElementById("carbon");
+    if (x.style.display === "none") {
+        x.style.display = "block";
+    } else {
+        x.style.display = "none";
+    }
+}
+function oxygen() {
+    var x = document.getElementById("oxygen");
+    if (x.style.display === "none") {
+        x.style.display = "block";
+    } else {
+        x.style.display = "none";
+    }
+}
+function nitrogen() {
+    var x = document.getElementById("nitrogen");
+    if (x.style.display === "none") {
+        x.style.display = "block";
+    } else {
+        x.style.display = "none";
+    }
+}
+function calcium() {
+    var x = document.getElementById("calcium");
+    if (x.style.display === "none") {
+        x.style.display = "block";
+    } else {
+        x.style.display = "none";
+    }
+}
+function calcium() {
+    var x = document.getElementById("calcium");
+    if (x.style.display === "none") {
+        x.style.display = "block";
+    } else {
+        x.style.display = "none";
+    }
+}
+
+function phosphorus() {
+    var x = document.getElementById("phosphorus");
+    if (x.style.display === "none") {
+        x.style.display = "block";
+    } else {
+        x.style.display = "none";
+    }
+}
 

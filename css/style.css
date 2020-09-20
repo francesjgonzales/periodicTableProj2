@@ -6,12 +6,21 @@
   box-sizing: border-box;
 }
 
+@media (max-width: 375px) {
+  * {
+  font-size: medium;
+  box-sizing: border-box;
+  }
+}
+
+
 body,
 .container,
 #mainTxt {
   background-color: white;
   align-content: center;
-  margin: auto;
+  /* margin: auto; */
+  margin-top: 45px;
   padding: auto;
   font-family: "Roboto Mono", monospace;
 }
@@ -73,10 +82,7 @@ mark {
 td {
   margin: 20px;
   padding: 20px;
-  font-size: 15px;
-  border-style: dotted black;
   align-items: center;
-  /* background-color: gray; */
   text-align: center;
 }
 .card {
@@ -88,12 +94,8 @@ td {
   align-items: center;
   background-color: white;
   text-align: center;
-  background-color: D9FFFF;
 }
 
-th {
-  cursor: pointer;
-}
 
 #tableHead {
   margin: 20px;
@@ -189,7 +191,20 @@ th {
 #metalloid{
   background-color: rgb(146, 219, 255);
 }
-[id*='alkali']{
-  background-color: rgb(146, 219, 255);
+#metal{
+  background-color: lightgrey
 }
+#lanthanoid{
+  background-color: rgb(210,255,145);
+}
+#actinoid{
+  background-color: rgb(184, 255, 145);
+}
+[id*='transition']{
+  background-color: rgb(231,231,231);
+}
+[id*='alkali']{
+  background-color: rgb(254, 255, 115);
+}
+
 

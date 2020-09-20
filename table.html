@@ -27,59 +27,133 @@
   </head>
   <body>
     <!-- Return to Top -->
-    <a href="javascript:" id="return-to-top"><i class="icon-chevron-up"></i></a>
+    <a href="javascript:" id="return-to-top"><i class="fas fa-chevron-up"></i></a>
     <nav class="navbar fixed-top">
-      <a class="navbar-brand" href="#"
+      <a class="navbar-brand" href="https://francesjgonzales.github.io/periodicTableProj2/"
         ><img src="img/SFK-2.svg" alt="science-logo" height="28"
       /></a>
-      <a class="navbar-brand" href="#chemistry">Chemistry</a>
-      <a class="navbar-brand" href="#matter">Matter</a>
-      <a class="navbar-brand" href="#atom">Atom</a>
-      <a class="navbar-brand" href="#elements">Elements & Reaction</a>
+      <a class="navbar-brand" href="https://francesjgonzales.github.io/periodicTableProj2/#chemistry">Chemistry</a>
+      <a class="navbar-brand" href="https://francesjgonzales.github.io/periodicTableProj2/#matter">Matter</a>
+      <a class="navbar-brand" href="https://francesjgonzales.github.io/periodicTableProj2/#atom">Atom</a>
+      <a class="navbar-brand" href="https://francesjgonzales.github.io/periodicTableProj2/#elements">Elements & Reaction</a>
       <a class="navbar-brand" href="#periodicTable">Periodic Table</a>
       <a class="navbar-brand" href="#youngChemist">Young Chemist</a>
     </nav>
 
 
 <!-- Periodic Table -->
-<div class='container3' id='periodicTable'>
+<div class='container' id='periodicTable'>
     <p id='header'>Elements as Building Blocks</h3>
-      <p id='para' style='text-align: center;'>The periodic table is organized like a big grid.</p>
-
-      <div class = "flexbox-container" id="groupNumbers">
-
-        <div style="width: 8rem">1</div>
-        <div class='card'style="width: 10rem">2</div>
-        <div class='card'style="width: 10rem">3</div>
-        <div class='card'style="width: 10rem">4</div>
-        <div class='card'style="width: 10rem">5</div>
-        <div class='card'style="width: 10rem">6</div>
-        <div class='card'style="width: 10rem" >7</div>
-        <div class='card'style="width: 10rem">8</div>
-        <div class='card'style="width: 10rem">9</div>
-        <div class='card'style="width: 10rem">10</div>
-        <div class='card'style="width: 10rem">11</div>
-        <div class='card'style="width: 10rem">12</div>
-        <div class='card'style="width: 10rem">13</div>
-        <div class='card'style="width: 10rem">14</div>
-        <div class='card'style="width: 10rem">15</div>
-        <div class='card'style="width: 10rem">16</div>
-        <div class='card'style="width: 10rem">17</div>
-        <div class='card'style="width: 10rem">18</div>
+      <p id='para' style='text-align: center;'>The periodic table is organized like a big grid.<br>
+        Each element is placed in a specific location because of its atomic structure. As with any grid, the periodic table has rows (left to right) and columns (up and down). Each row and column has specific characteristics. 
+      </p>
+      <br>
+      <div class='row'>
+        <div class='col-3'>
+          <div class="card" id="alkali metal">
+            <h5 id="card-number">11</h5>
+            <h1 id="card-symbol">Na</h1>
+            <h3 id="card-name">Sodium</h3>
+          </div>
+        </div>
+        <div class='col-3'>
+          <div class="card" id="alkali metal">
+            <h5 id="card-number">12</h5>
+            <h1 id="card-symbol">Mg</h1>
+            <h3 id="card-name">Magnesium</h3>
+          </div>
+        </div>
+        <div class='col-6'>
+          <p id='para'>For example, magnesium (Mg) and calcium (Mg) are found in column two and share certain similarities while potassium (K) and calcium (Ca) from row four share different characteristics. Magnesium and sodium (Na) also share qualities because the are in the same period (similar electron configurations).</p>
+        </div>
       </div>
 
+      <div class='row'>
+        <div class='col-3'>
+          <div class="card" id="alkali metal"> 
+            <h5 id="card-number">19</h5>
+            <h1 id="card-symbol">K</h1>
+            <h3 id="card-name">Potassium</h3>
+          </div>
+        </div>
+        <div class='col-3'>
+          <div class="card"id="alkali metal">
+            <h5 id="card-number">20</h5>
+            <h1 id="card-symbol">Ca</h1>
+            <h3 id="card-name">Calcium</h3>
+          </div>
+        </div>
+        <div class='col-8'>
+        </div>
+      </div>
+    
+    <div class='container'>
+      <p id='header'>Why are the First 18 Elements Special?</h3>
+        <p id='para' style='text-align: center;'>(1) The electrons fit nicely into three orbitals. Remember that the electrons spin around the nucleus in regions called orbitals.
+          (2) These elements make up most of the matter in the Universe.
+          (3) It is a lot easier to remember facts about 18 elements as opposed to over 100 elements.The periodic table is organized like a big grid.</p>
 
-      
-    <div class = 'flexbox-container' id='finalCard'>
+            <table class="table table-hover">
+              <thead>
+                <tr>
+                  <th scope="col" style='text-align: center; font-size: large; '>Color-coded elements are categorised to Group Blocks</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td scope="row" id='diatomic' style='font-size: large;'>Diatomic</td>
+                </tr>
+                <tr>
+                  <td scope="row" id='nonmetal' style='font-size: large;'>Nonmetal</td>
+                </tr>
+                <tr>
+                  <td scope="row" id='noble' style='font-size: large;'>Noble Gases</td>
+                </tr>
+                <tr>
+                  <td scope="row" id='halogen' style='font-size: large;'>Halogen</td>
+                </tr>
+                <tr>
+                  <td scope="row" id='halogen' style='font-size: large;'>Halogen</td>
+                </tr>
+                <tr>
+                  <td scope="row" id='metalloid' style='font-size: large;'>Metalloid</td>
+                </tr>
+                <tr>
+                  <td scope="row" id='metal' style='font-size: large;'>Metal</td>
+                </tr>
+                <tr>
+                  <td scope="row" id='lanthanoid' style='font-size: large;'>Lanthanoid</td>
+                </tr>
+                <tr>
+                  <td scope="row" id='actinoid' style='font-size: large;'>Actinoid</td>
+                </tr>
+                <tr>
+                  <td scope="row" id='transition' style='font-size: large;'>Transition Metal</td>
+                </tr>
+                <tr>
+                  <td scope="row" id='alkali' style='font-size: large;'>Alkali Metal</td>
+                </tr>
+                <tr>
+                  <td scope="row" id='alkali' style='font-size: large;'>Alkaline earth metal</td>
+                </tr>
+
+              </tbody>
+            </table>
+            <br>
+      <p id='header'>Cards are sorted according to atomic number</p>
+      <div class = 'flexbox-container' id='finalCard'>
         <div class="card">
             <h5 id="card-number">15</h5>
             <h1 id="card-symbol">P</h1>
             <h3 id="card-name">PHOSPHORUS</h3>
         </div>
     </div>    
+    </div>  
+
       
-
-
+    <div class='container'>
+    <p id='header'>More Information about each element</h3>
+    
     <div class = 'flexbox-container' id='showMore'>
         <div class="card" style="width: 50rem">
           <h1 id="card-symbol">1</h1>
@@ -87,6 +161,8 @@
           <h5 id="card-groupBlock">nonmetal</h5>
           <p id="history">"The name derives from the Greek word hydro for water and genes for forming because it burned in air to form water. Hydrogen was discovered by the English physicist Henry Cavendish in 1766.<br/> <br>Scientists had been producing hydrogen for years before it was recognized as an element. Written records indicate that Robert Boyle produced hydrogen gas as early as 1671 while experimenting with iron and acids. Hydrogen was first recognized as a distinct element by Henry Cavendish in 1766.Composed of a single proton and a single electron, hydrogen is the simplest and most abundant element in the universe. It is estimated that 90% of the visible universe is composed of hydrogen."</p>
         </div>
+    </div>
+
     </div>    
 </div>
 
@@ -94,57 +170,6 @@
     <div class='flexbox-container' id='firstCard'>
     <div class='flexbox-item'></div>
     </div>
-
-
-
-    <!-- Periodic Table for kids -->
-    <div class="container2">
-      <div class="table-responsive">
-        <table class="table" style=background-color:white>
-          <tbody>
-            <tr id="atomTemplate"></tr>
-            <tr id="symbolTemplate"></tr>
-            <tr id="elementNameTemplate"></tr>
-          </tbody>
-        </table>
-      </div>
-    </div>
-
-
-
-    <!-- Sorted by groupBlock elements -->
-    <div class="container"> 
-      <div id="dataSorted"></div>
-    </div>
-
-
-
-    <!-- All Elements-->
-    <div class='container'>
-    <table class="table table-hover">
-      <thead>
-        <tr id="tableHead">
-          <th onclick="groupCol(this)">Atomic Number</th>
-          <th onclick="groupCol(this)">Symbol</th>
-          <th onclick="groupCol(this)">Element Name</th>
-          <th onclick="groupCol(this)">Year Discovered</th>
-          <th onclick="groupCol(this)">Group Block</th>
-          <th onclick="groupCol(this)">Standard State</th>
-          <th onclick="groupCol(this)">History</th>
-        </tr>
-      </thead>
-      <tbody id="data"></tbody>
-    </table>
-    </div>
-
-
-<!-- more data showing -->
-  <div class="container">
-    <div id="moreInfo">
-
-    </div>
-    </div>
-  </div>
 
 
   

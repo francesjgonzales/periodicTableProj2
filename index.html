@@ -23,15 +23,15 @@
 
   <body>
 <!-- Return to Top -->
-<a href="javascript:" id="return-to-top"><i class="icon-chevron-up"></i></a>
+<a href="javascript:" id="return-to-top"><i class="fas fa-chevron-up"></i></a>
 
     <nav class="navbar fixed-top ">
       <a class="navbar-brand" href="#chemistry">Chemistry</a>
       <a class="navbar-brand" href="#matter">Matter</a>
       <a class="navbar-brand" href="#atom">Atom</a>
       <a class="navbar-brand" href="#elements">Elements & Reaction</a>
-      <a class="navbar-brand" href="#">Periodic Table</a>
-      <a class="navbar-brand" href="#">Young Chemist</a>
+      <a class="navbar-brand" href="https://francesjgonzales.github.io/periodicTableProj2/#periodicTable">Periodic Table</a>
+      <a class="navbar-brand" href="https://francesjgonzales.github.io/periodicTableProj2/#youngChemist">Young Chemist</a>
     </nav>
 
 
@@ -116,30 +116,34 @@
       <p id='header'>Atoms in Chemistry</h3>
         <p id='para' style='text-align: center;'>You are made up of different types of Atoms</p>
         <div class='row'>
+          
           <div class="col-2">
-            <div class="card" style="width: 15rem;">
+            <div class="card" >
+              <button type="button" class="btn" onclick="hydrogen()">
               <div class="card-body">
                 <h5 class="card-title">1</h5>
-                <!-- <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6> -->
                 <p class="card-text">H</p>
                 <h4 class="card-title">HYDROGEN</h4>
               </div>
             </div>
+            </button>
           </div>
 
           <div class="col-2">
-            <div class="card" style="width: 15rem;">
+            <div class="card" >
+              <button type="button" class="btn" onclick="carbon()">  
               <div class="card-body">
                 <h5 class="card-title">6</h5>
-                <!-- <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6> -->
                 <p class="card-text">C</p>
                 <h4 class="card-title">CARBON</h4>
               </div>
             </div>
+            </button>
           </div>
 
           <div class="col-2">
-            <div class="card" style="width: 15rem;">
+            <div class="card" >
+              <button type="button" class="btn" onclick="oxygen()">
               <div class="card-body">
                 <h5 class="card-title">8</h5>
                 <!-- <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6> -->
@@ -147,10 +151,12 @@
                 <h4 class="card-title">OXYGEN</h4>
               </div>
             </div>
+            </button>
           </div>
 
           <div class="col-2">
-            <div class="card" style="width: 15rem;">
+            <div class="card" >
+              <button type="button" class="btn" onclick="nitrogen()">
               <div class="card-body">
                 <h5 class="card-title">7</h5>
                 <!-- <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6> -->
@@ -158,10 +164,12 @@
                 <h4 class="card-title">NITROGEN</h4>
               </div>
             </div>
+            </button>
           </div>
 
           <div class="col-2">
-            <div class="card" style="width: 15rem;">
+            <div class="card" >
+              <button type="button" class="btn" onclick="calcium()">
               <div class="card-body">
                 <h5 class="card-title">20</h5>
                 <!-- <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6> -->
@@ -169,10 +177,12 @@
                 <h4 class="card-title">CALCIUM</h4>
               </div>
             </div>
+            </button>
           </div>
 
           <div class="col-2">
-            <div class="card" style="width: 15rem;">
+            <div class="card" >
+              <button type="button" class="btn" onclick="phosphorus()">
               <div class="card-body">
                 <h5 class="card-title">15</h5>
                 <!-- <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6> -->
@@ -180,8 +190,84 @@
                 <h4 class="card-title">PHOSPHORUS</h4>
               </div>
             </div>
+            </button>
           </div>
-        
+                   
+          </div>
+          <div>
+            <!-- info about Hydrogen -->
+            <div class='col'>
+            <div id="myDIV">
+             <div class="card" id="hydrogen" style="align-content: center;" >
+               <h1 id="card-symbol">H</h1>
+               <h3 id="card-name">Hydrogen</h3>
+               <h5 id="card-groupBlock">nonmetal</h5>
+               <p id="history">The name derives from the Greek word hydro for water and genes for forming because it burned in air to form water. Hydrogen was discovered by the English physicist Henry Cavendish in 1766.
+                 Scientists had been producing hydrogen for years before it was recognized as an element. Written records indicate that Robert Boyle produced hydrogen gas as early as 1671 while experimenting with iron and acids. Hydrogen was first recognized as a distinct element by Henry Cavendish in 1766.Composed of a single proton and a single electron, hydrogen is the simplest and most abundant element in the universe. It is estimated that 90% of the visible universe is composed of hydrogen.</p>
+               </div>
+            </div>   
+           </div>  
+            <!-- info about Carbon -->
+            <div class='col'>
+            <div id="myDIV">
+             <div class="card" id="carbon" style="align-content: center; background-color: none;" >
+               <h1 id="card-symbol">C</h1>
+               <h3 id="card-name">Carbon</h3>
+               <h5 id="card-groupBlock">nonmetal</h5>
+               <p id="history">The name derives from the Latin carbo for charcoal. It was known in prehistoric times in the form of charcoal and soot. In 1797, the English chemist Smithson Tennant proved that diamond is pure carbon.
+                Carbon, the sixth most abundant element in the universe, has been known since ancient times. Carbon is most commonly obtained from coal deposits, although it usually must be processed into a form suitable for commercial use. Three naturally occurring allotropes of carbon are known to exist: amorphous, graphite and diamond.</p>
+               </div>
+            </div>   
+           </div>  
+            <!-- info about Oxygen -->
+            <div class='col'>
+            <div id="myDIV">
+             <div class="card" id="oxygen" style="align-content: center; background-color: none;" >
+               <h1 id="card-symbol">O</h1>
+               <h3 id="card-name">Oxygen</h3>
+               <h5 id="card-groupBlock">nonmetal</h5>
+               <p id="history">The name derives from the Greek oxys for acid and genes for forming because the French chemist Antoine-Laurent Lavoisier once thought that oxygen was integral to all acids.Oxygen was discovered independently by the Swedish pharmacist and chemist Carl-Wilhelm Scheele in 1771, and the English clergyman and chemist Joseph Priestley in 1774. Scheele's Chemical Treatise on Air and Fire was delayed in publication until 1777, so Priestley is credited with the discovery because he published first. The name oxygen was created by Antoine Lavoisier. Its atomic weight was used as a standard of comparison for each of the other elements until 1961 when the International Union of Pure and Applied Chemistry adopted carbon 12 as the new basis.</p>
+               </div>
+            </div>   
+           </div>  
+            <!-- info about Nitrogen -->
+            <div class='col'>
+            <div id="myDIV">
+             <div class="card" id="nitrogen" style="align-content: center; background-color: none;" >
+               <h1 id="card-symbol">N</h1>
+               <h3 id="card-name">Nitrogen</h3>
+               <h5 id="card-groupBlock">nonmetal</h5>
+               <p id="history">The name derives from the Latin nitrum and Greek nitron for native soda and genes for forming. Nitrogen was discovered by the Scottish physician Daniel Rutherford in 1772. It is the fifth most abundant element in the universe and makes up about 78% of the earth's atmosphere, which contains an estimated 4,000 trillion tons of the gas. Nitrogen is obtained from liquefied air through a process known as fractional distillation. He removed oxygen and carbon dioxide from air and showed that the residual gas would not support combustion or living organisms. At the same time there were other noted scientists working on the problem of nitrogen. These included Scheele, Cavendish, Priestley, and others. They called it burnt or dephlogisticated air, which meant air without oxygen.</p>
+               </div>
+            </div>   
+           </div>  
+            <!-- info about Calcium -->
+            <div class='col'>
+            <div id="myDIV">
+             <div class="card" id="calcium" style="align-content: center; background-color: none;" >
+               <h1 id="card-symbol">Ca</h1>
+               <h3 id="card-name">Calcium</h3>
+               <h5 id="card-groupBlock">alkaline earth metal</h5>
+               <p id="history">The name derives from the Latin calx for lime (CaO) or limestone (CaCO3) in which it was found. It was first isolated by British chemist Humphry Davy in 1808 with help from the Swedish chemist Jöns Jacob Berzelius and the Swedish court physician M. M. af Pontin.</p>
+               </div>
+            </div>   
+           </div>  
+            <!-- info about phosphorus -->
+            <div class='col'>
+            <div id="myDIV">
+             <div class="card" id="phosphorus" style="align-content: center; background-color: none;" >
+               <h1 id="card-symbol">P</h1>
+               <h3 id="card-name">Phosphorus</h3>
+               <h5 id="card-groupBlock">nonmetal</h5>
+               <p id="history">The name derives from the Greek phosphoros for bringing light because it has the property of glowing in the dark. This was also the ancient name for the planet Venus, when it appears before sunrise. Phosphorus was discovered by the German merchant Hennig Brand in 1669.</p>
+               </div>
+            </div>   
+           </div>  
+
+
+
+
+
         </div>
 
         <img src="/img/kids-diff-age.png" class="img-fluid" alt="Responsive image">
