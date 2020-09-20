@@ -8,11 +8,10 @@
 
 @media (max-width: 375px) {
   * {
-  font-size: medium;
-  box-sizing: border-box;
+    font-size: medium;
+    box-sizing: border-box;
   }
 }
-
 
 body,
 .container,
@@ -89,13 +88,12 @@ td {
   margin: 20px;
   padding: 20px;
   font-size: 15px;
-  height: 4rem
+  height: 4rem;
   border-style: dotted black;
   align-items: center;
   background-color: white;
   text-align: center;
 }
-
 
 #tableHead {
   margin: 20px;
@@ -104,11 +102,10 @@ td {
   text-align: center;
 }
 
-
 .footer-bottom {
   margin: 20px;
   padding: 20px;
-  text-align: center
+  text-align: center;
 }
 
 /* RETURN TO TOP BUTTON */
@@ -116,8 +113,8 @@ td {
   position: fixed;
   bottom: 20px;
   right: 20px;
-  background: #318DDC;
-  background: #318DDC;
+  background: #318ddc;
+  background: #318ddc;
   width: 50px;
   height: 50px;
   display: block;
@@ -146,7 +143,7 @@ td {
   transition: all 0.3s ease;
 }
 #return-to-top:hover {
-  background: #318DDC;
+  background: #318ddc;
 }
 #return-to-top:hover i {
   color: #fff;
@@ -169,42 +166,39 @@ td {
 
 #showMore {
   margin: 20px;
-  padding: 20px; 
+  padding: 20px;
   text-align: center;
 }
 
-
-#diatomic{
-  background-color: rgb(231,231,231)
+#diatomic {
+  background-color: rgb(231, 231, 231);
 }
 
-#nonmetal{
+#nonmetal {
   background-color: rgb(232, 208, 255);
 }
 
-[id*='noble'] {
-  background-color: rgb(248,153,106);
+[id*="noble"] {
+  background-color: rgb(248, 153, 106);
 }
-#halogen{
+#halogen {
   background-color: rgb(250, 166, 255);
 }
-#metalloid{
+#metalloid {
   background-color: rgb(146, 219, 255);
 }
-#metal{
-  background-color: lightgrey
+#metal {
+  background-color: lightgrey;
 }
-#lanthanoid{
-  background-color: rgb(210,255,145);
+#lanthanoid {
+  background-color: rgb(210, 255, 145);
 }
-#actinoid{
+#actinoid {
   background-color: rgb(184, 255, 145);
 }
-[id*='transition']{
-  background-color: rgb(231,231,231);
+[id*="transition"] {
+  background-color: rgb(231, 231, 231);
 }
-[id*='alkali']{
+[id*="alkali"] {
   background-color: rgb(254, 255, 115);
 }
-
-
