@@ -49,7 +49,7 @@ body,
   align-items: center;
 }
 
-#para,
+.p,
 ul {
   font-size: 2rem;
 }
