@@ -40,7 +40,7 @@ axios.get(API)
 
     });
 
-axios.get('/user/API')
+axios.get(API)
     .catch(function (error) {
         if (error.response) {
             // The request was made and the server responded with a status code
