@@ -38,7 +38,7 @@
   <!-- main  -->
     <div class="container1">
       <div id='mainImg'>
-        <img src="/images2/mainImg.png" class="img-fluid" alt="science-main-image">
+        <img src="/periodicTableProj2/images2/mainImg.png" class="img-fluid" alt="science-main-image">
         <img src="/periodicTableProj2/images2/Teacher-with-students.jpg" class="img-fluid" alt="teacher-with-students">
       </div>
     </div>
@@ -53,7 +53,7 @@
       <div class="row">
         <div class="col-4">
           <div class="card" style="width: 25rem";>
-          <img class="card-img-top" src="img/atom.png" alt="atom">
+          <img class="card-img-top" src="/periodicTableProj2/images2/atom.png" alt="atom">
           <div class="card-body">
             <p class="class-text" id="paraText">As a chemist, you might look at the amount of space an object can fill.</p>
           </div>
@@ -62,7 +62,7 @@
 
         <div class="col-4">
           <div class="card" style="width: 25rem";>
-          <img class="card-img-top" src="img/microscope.png" alt="microscope">
+          <img class="card-img-top" src="/periodicTableProj2/images2/microscope.png" alt="microscope">
           <div class="card-body">
             <p class="class-text" id="paraText">As a chemist, you might measure the energy of atoms (state of matter).</p>
           </div>
@@ -71,7 +71,7 @@
 
         <div class="col-4">
           <div class="card" style="width: 25rem";>
-          <img class="card-img-top" src="img/test-tube.png" alt="test-tube">
+          <img class="card-img-top" src="/periodicTableProj2/images2/test-tube.png" alt="test-tube">
           <div class="card-body">
             <p class="class-text" id="paraText">Chemists also look at the way acids can dissolve certain compounds (reactions).</p>
           </div>
@@ -82,7 +82,8 @@
       </div> 
       <!-- endRow -->
 
-                    <p id='subText' style='text-align: center;'>Chemistry always goes back to the study of matter. Over thousands of years, chemists have come to understand many different ways that matter changes and moves across the Universe.</p>
+      <p id='paraText' style='text-align: center;'>Chemistry always goes back to the study of matter. Over thousands of years, chemists have come to understand many different ways that matter changes and moves across the Universe.</p>
+
     </div> 
 
 
@@ -90,21 +91,21 @@
 
     <!-- Chemistry and Matter -->
     <div class='container3' id='matter'>
-      <p id='header'>Chemistry and Matter</h3>
-        <p id='para' style='text-align: center;'>The earth is one large mixture of <mark>gases</mark>, <mark>liquid</mark> and <mark>solid</mark>.</p>
-        <img src="/img/Earth-illustrationByMacrovector.png" class="img-fluid" alt="Responsive image">
+      <p id='textHeader'>Chemistry and Matter</h3>
+        <p id='paraText' style='text-align: center;'>The earth is one large mixture of <mark>gases</mark>, <mark>liquid</mark> and <mark>solid</mark>.</p>
+        <img src="/periodicTableProj2/images2/Earth-illustrationByMacrovector.png" class="img-fluid" alt="earth-illustration-by-macrovector">
         <a href="http://www.freepik.com">Designed by macrovector / Freepik</a>
         <br>
         <br>
         <br>
           <p id='subHeader'>If chemistry is the study of matter, what is matter? </p>
-          <p id='para'><br>
+          <p id='paraText'><br>
       
             Matter is the stuff around you. Matter is the air you breathe, the water you drink, the ground you walk on, the flowers you smell, and the food you taste. Any object you can see, smell, or touch is made of matter. There are also very small pieces of matter that you can’t see or touch. Chemists use special equipment to study those little guys. Scientists theorize all of the matter we can observe makes up about 5% of the Universe. The rest is made of dark matter and dark energy.<br><br>
             
             <p id='subHeader'>There are two main qualities of matter.  </p>
                       
-            <p id='para'><mark>Matter takes up space.</mark> Even the smallest particles and pieces of atoms take up some space. <mark>Matter also has a mass.</mark> Technically, mass is the amount of matter you have. For now, you can think of mass in terms of weight. You don’t need chemistry to tell you an elephant has a lot of mass, a butterfly has less mass, and an atom has even less mass. Holding an object will tell you the object’s weight and give you a good idea of its mass when compared to other objects.<br><br>
+            <p id='paraText'><mark>Matter takes up space.</mark> Even the smallest particles and pieces of atoms take up some space. <mark>Matter also has a mass.</mark> Technically, mass is the amount of matter you have. For now, you can think of mass in terms of weight. You don’t need chemistry to tell you an elephant has a lot of mass, a butterfly has less mass, and an atom has even less mass. Holding an object will tell you the object’s weight and give you a good idea of its mass when compared to other objects.<br><br>
             
               Just so you know, <mark>mass and weight are different.</mark> Mass is an amount of matter that is the same everywhere in the Universe. One kilogram of iron (Fe) will have the same mass on the Earth or the Moon. Weight is based on the gravity of the environment. That kilogram of iron will weigh more on the Earth because the Earth has a stronger gravity than the Moon. Since Jupiter is much larger than the Earth (stronger gravitational force), the weight of that iron on Jupiter will be much heavier. The mass will be the same.</p>        
     </div>
@@ -112,8 +113,8 @@
 
     <!-- Atom in Chemistry -->
     <div class='container3' id='atom'>
-      <p id='header'>Atoms in Chemistry</p>
-        <p id='para' style='text-align: center;'>You are made up of different types of Atoms</p>
+      <p id='textHeader'>Atoms in Chemistry</p>
+        <p id='paraText' style='text-align: center;'>You are made up of different types of Atoms</p>
         <div class='row'>
           
           
@@ -124,8 +125,10 @@
                 <p class="card-text">H</p>
                 <h4 class="card-title">HYDROGEN</h4>
               </div>
+              <button style="background-color: aqua;" type="button" class="btn" onclick="hydrogen()">Check this out</button>
+
             </div>
-            <button type="button" class="btn" onclick="hydrogen()">More info</button>  
+            
           </div>
           
 
@@ -136,8 +139,10 @@
                 <p class="card-text">C</p>
                 <h4 class="card-title">CARBON</h4>
               </div>
+              <button style="background-color: aqua;" type="button" class="btn" onclick="carbon()">Check this out</button>
+
             </div>
-            <button type="button" class="btn" onclick="carbon()">More info</button>
+
           </div>
 
 
@@ -150,8 +155,8 @@
                 <p class="card-text">O</p>
                 <h4 class="card-title">OXYGEN</h4>
               </div>
+              <button style="background-color: aqua;" type="button" class="btn" onclick="oxygen()">Check this out</button>
             </div>
-            <button type="button" class="btn" onclick="oxygen()">More info</button>
           </div>
 
           <div class="col-2">
@@ -163,8 +168,10 @@
                 <p class="card-text">N</p>
                 <h4 class="card-title">NITROGEN</h4>
               </div>
+              <button style="background-color: aqua;" type="button" class="btn" onclick="nitrogen()">Check this out</button>
             </div>
-            <button type="button" class="btn" onclick="nitrogen()">More info</button>
+
+
           </div>
 
           <div class="col-2">
@@ -177,7 +184,7 @@
                 <h4 class="card-title">CALCIUM</h4>
               </div>
             </div>
-            <button type="button" class="btn" onclick="calcium()">More info</button>
+            <button style="background-color: aqua;" type="button" class="btn" onclick="calcium()">Check this out</button>
           </div>
 
           <div class="col-2">
@@ -269,13 +276,13 @@
 
         </div>
 
-        <img src="/img/kids-diff-age.png" class="img-fluid" alt="Responsive image">
+        <img src="/periodicTableProj2/images2/kids-diff-age.png" class="img-fluid" alt="Responsive image">
         <a href="http://www.freepik.com">Designed by pch.vector / Freepik</a>
         <br>
         <br>
         <br>
           <p id='subHeader'><mark>Atoms</mark> are the smallest and most basic units of matter that have the properties of an element.</p>
-          <p id='para'><br>
+          <p id='paraText'><br>
              All atoms have the same basic parts <mark>(electrons, protons, and neutrons)</mark>, but they are arranged in different ways. Because they have different numbers of parts, atoms of each element have different masses. Hydrogen (H) has an average atomic mass of 1 while carbon (C) is about 12 and calcium (Ca) is about 40.<br><br>
             
             You might say, “Why doesn’t chemistry focus on electrons? Shouldn’t chemists work with the smallest pieces of matter?” Yes, electrons are smaller than atoms and there are subatomic particles that are smaller than electrons. But those teeny-tiny particles don’t have the properties of an element. When the small parts are combined into atoms, chemists can start to see properties and patterns in their behavior.
@@ -286,14 +293,14 @@
 
 <!-- What are Elements? -->
     <div class='container3' id='elements'>
-      <p id='header'>What are Elements?</h3>
-        <p id='para' style='text-align: center;'>Elements are pieces of matter where all of the atoms have the same <mark>chemical properties</mark>.</p>
-        <img src="/img/elements.png" class="img-fluid" alt="Responsive image">
+      <p id='textHeader'>What are Elements?</h3>
+        <p id='paraText' style='text-align: center;'>Elements are pieces of matter where all of the atoms have the same <mark>chemical properties</mark>.</p>
+        <img src="/periodicTableProj2/images2/elements.png" class="img-fluid" alt="Responsive image">
         <br>
         <br>
         <br>
           <p id='subHeader'>Elements are made of similar atoms.</p>
-          <p id='para'><br>
+          <p id='paraText'><br>
       
             We want to say the atoms are exactly the same, but that’s not quite true. An element is made of atoms that have the same number of protons. If you have a batch of atoms and they all have the same number of <mark>protons</mark>, they are all one element.<br><br>
             
@@ -303,15 +310,15 @@
 
     <!-- What are Chemical Reactions? -->
     <div class='container3'>
-      <p id='header'>What are Chemical Reactions?</h3>
-        <p id='para' style='text-align: center;'>Chemical reactions occur when different compounds combine and create new compounds.</p>
-        <img src="/img/chemicalReation.png" class="img-fluid" alt="Responsive image">
+      <p id='subHeader'>What are Chemical Reactions?</h3>
+        <p id='paraText' style='text-align: center;'>Chemical reactions occur when different compounds combine and create new compounds.</p>
+        <img src="/periodicTableProj2/images2/chemicalReation.png" class="img-fluid" alt="Responsive image">
         <br>
         <br>
         <br>
           <p id='subHeader'>Chemistry studies the formation and destruction of the chemical bonds in those compounds.
           </p>
-          <p id='para'><br>
+          <p id='paraText'><br>
       
             For example, a chemistry experiment might study a rusting pipe. The pipe starts out as iron (Fe). Over time, the pipe begins to oxidize and iron oxide (Fe2O3) is formed. The basic particles of matter are still the same. Orbiting electrons are still electrons and protons in the nucleus are still protons, but their locations and connections have changed. Two iron atoms are bonded to three oxygen (O) atoms with covalent bonds. As we said, chemistry studies the formation and destruction of the chemical bonds between the iron and oxygen atoms.</p>      
         
