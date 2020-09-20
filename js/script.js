@@ -78,6 +78,7 @@ $('#return-to-top').click(function () {      // When arrow is clicked
 });
 
 
+
 function hydrogen() {
     var x = document.getElementById("hydrogen");
     if (x.style.display === "none") {
