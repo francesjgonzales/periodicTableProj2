@@ -3,7 +3,7 @@ let API = 'https://periodictable.p.rapidapi.com/?rapidapi-key=df774794c4mshb53d7
 axios.get(API)
     .then(function (response) {
 
-        let allData = response.data
+        let allData = response.data;
         console.log(allData)
 
 
@@ -20,9 +20,7 @@ axios.get(API)
 
         //END
 
-
-
-        //START showMore
+        // START showMore
         let elemental2 = response.data.map(data => {
             return `<div class="card" id="${data.groupBlock}" style="width: 45rem">
                     <h1 id="card-symbol">${data.symbol}</h1>
@@ -34,7 +32,17 @@ axios.get(API)
 
         document.getElementById('showMore').innerHTML = elemental2
 
-        //END
+        // END
+
+        // START search filter by 'nonMetal' groupBlock
+        let searchByNonMetal = allData.filter(function (nonMetal) {
+            if (nonMetal.groupBlock === 'nonmetal') {
+                return true;
+            }
+        });
+        console.log(searchByNonMetal)
+
+        // END
 
 
 
@@ -136,4 +144,35 @@ function phosphorus() {
         x.style.display = "none";
     }
 }
+
+
+
+// #add accordion mode
+$("#langCollapse").collapse('show');
+changeBtnColor();
+$("button[name='langCollapse']").addClass("btn btn-dark m-1");
+
+
+function changeBtnColor() {
+    $(".infoCollapse").removeClass("btn btn-dark m-1");
+    $(".infoCollapse").addClass("btn btn-light m-1");
+}
+
+
+
+function toggleFunction(name) {
+    // $("#langCollapse").collapse('toggle');
+    $(".collapse").collapse("hide");
+    changeBtnColor();
+    setTimeout(function () { openSelected(name) }, 360);
+}
+
+function openSelected(name) {
+    btnSelection = "button" + "[name=" + name + "]";
+    $(btnSelection).addClass("btn btn-dark m-1");
+    selection = "#" + name;
+    $(selection).collapse("toggle");
+}
+
+
 

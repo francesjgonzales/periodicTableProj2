@@ -35,6 +35,7 @@
     <title>Science for Kids</title>
   </head>
   <body>
+
     <!-- Return to Top -->
     <a href="javascript:" id="return-to-top"><i class="fas fa-chevron-up"></i></a>
     <nav class="navbar fixed-top">
@@ -50,7 +51,7 @@
     </nav>
 
 
-<!-- Periodic Table -->
+    <!-- Periodic Table -->
     <div class='container' id='periodicTable'>
     <p id='subHeader'>Elements as Building Blocks</p>
       <p id='paraText' style='text-align: center;'>The periodic table is organized like a big grid.<br>
@@ -149,6 +150,53 @@
               </tbody>
             </table>
             <br>
+      
+            <!-- accordion button here -->
+            <div class="row d-flex justify-content-center">
+              <button class="infoCollapse btn btn-dark m-1" type="button" onClick="toggleFunction(this.name)" name="langCollapse" id="infoCollapse">
+                Languages
+              </button>
+              <button class="infoCollapse btn btn-dark m-1 " type="button" onClick="toggleFunction(this.name)" name="fwCollapse" id="infoCollapse">
+                Frameworks
+              </button>
+              <button class="infoCollapse btn btn-dark m-1" type="button" onClick="toggleFunction(this.name)" name="dbCollapse" id="infoCollapse">
+                Database
+              </button>
+              <button class="infoCollapse btn btn-dark m-1" type="button" onClick="toggleFunction(this.name)" name="ideCollapse" id="infoCollapse">
+                IDE
+              </button>
+              <button class="infoCollapse btn btn-dark m-1" type="button" onClick="toggleFunction(this.name)" name="othersCollapse" id="infoCollapse">
+                Others
+              </button>
+        
+            <!-- accordion info here -->
+            <div class="collapse mt-3" id="langCollapse">
+              <div class="card card-body">
+                <h6>HTML</h6>
+                <div class="progress">
+                  <div class="progress-bar bg-dark" role="progressbar" style="width: 95%" aria-valuenow="50" aria-valuemin="0"
+                    aria-valuemax="100"></div>
+                </div>
+                <h6 class="mt-3">CSS</h6>
+                <div class="progress">
+                  <div class="progress-bar bg-dark" role="progressbar" style="width: 90%" aria-valuenow="50" aria-valuemin="0"
+                    aria-valuemax="100"></div>
+                </div>
+                <h6 class="mt-3">JavaScript</h6>
+                <div class="progress">
+                  <div class="progress-bar bg-dark" role="progressbar" style="width: 85%" aria-valuenow="50" aria-valuemin="0"
+                    aria-valuemax="100"></div>
+                </div>
+                <h6 class="mt-3">Python</h6>
+                <div class="progress">
+                  <div class="progress-bar bg-dark" role="progressbar" style="width: 85%" aria-valuenow="50" aria-valuemin="0"
+                    aria-valuemax="100"></div>
+                </div>
+              </div>
+            </div>
+
+            
+      <!-- Periodic cards are inserted here-->
       <p id='subHeader'>Cards are sorted according to atomic number</p>
       <div class = 'flexbox-container' id='finalCard'>
         <div class="card">
