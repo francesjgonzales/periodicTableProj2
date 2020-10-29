@@ -20,8 +20,31 @@ axios.get(API)
 
         //END
 
-        // START showMore
-        let elemental2 = response.data.map(data => {
+
+        // START search filter by 'nonMetal' groupBlock - THIS WORKS
+        let searchByNonMetal = allData.filter(function (nonMetal) {
+            if (nonMetal.groupBlock === 'nonmetal') {
+                return true;
+            }
+        });
+        console.log(searchByNonMetal)
+
+        // Show filtered data in front end using map 
+        let elemental3 = searchByNonMetal.map(data => {
+            return `<div class="card" style="width: 10rem;" id="${data.groupBlock}">
+                    <h5>${data.atomicNumber}</h5>
+                    <h2>${data.symbol}</h2>
+                    <h5>${data.name}</h5>
+                    </div>`
+        }).join("")
+
+        document.getElementById('searchByGroupBlock').innerHTML = elemental3
+
+        //END
+
+
+        // START More Information about each element
+        let elemental2 = searchByNonMetal.map(data => {
             return `<div class="card" id="${data.groupBlock}" style="width: 45rem">
                     <h1 id="card-symbol">${data.symbol}</h1>
                     <h3 id="card-name">${data.name}</h3>
@@ -34,19 +57,44 @@ axios.get(API)
 
         // END
 
-        // START search filter by 'nonMetal' groupBlock
-        let searchByNonMetal = allData.filter(function (nonMetal) {
-            if (nonMetal.groupBlock === 'nonmetal') {
-                return true;
-            }
-        });
-        console.log(searchByNonMetal)
 
-        // END
+        // ADD ACCORDION
+
+        $("#langCollapse").collapse('show');
+        changeBtnColor();
+        $("button[name='langCollapse']").addClass("btn btn-dark m-1");
 
 
+        function changeBtnColor() {
+            $(".infoCollapse").removeClass("btn btn-dark m-1");
+            $(".infoCollapse").addClass("btn btn-light m-1");
+        }
+
+
+
+        function toggleFunction(name) {
+            // $("#langCollapse").collapse('toggle');
+            $(".collapse").collapse("hide");
+            changeBtnColor();
+            setTimeout(function () { openSelected(name) }, 360);
+        }
+
+        function openSelected(name) {
+            btnSelection = "button" + "[name=" + name + "]";
+            $(btnSelection).addClass("btn btn-dark m-1");
+            selection = "#" + name;
+            $(selection).collapse("toggle");
+        }
+
+        function openSelected(name) {
+            btnSelection = "button" + "[name=" + name + "]";
+            $(btnSelection).addClass("btn btn-dark m-1");
+            selection = "#" + name;
+            $(selection).collapse("toggle");
+        }
 
     });
+
 
 axios.get('https://periodictable.p.rapidapi.com/?rapidapi-key=df774794c4mshb53d706f8e64e5cp1f2e62jsn27e7fe71a7d2')
     .catch(function (error) {
