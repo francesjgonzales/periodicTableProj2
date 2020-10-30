@@ -200,9 +200,10 @@ td {
   background-color: rgb(232, 208, 255);
 }
 
-[id*="noble gas"] {
+[id*="noble"] {
   color: black;
   background-color: rgb(248, 153, 106);
+  display: inline-block;
 }
 #halogen {
   color: black;
@@ -224,7 +225,7 @@ td {
   color: black;
   background-color: rgb(184, 255, 145);
 }
-[id*="transition metal"] {
+[id*="transition"] {
   color: black;
   background-color: rgb(231, 231, 231);
 }
