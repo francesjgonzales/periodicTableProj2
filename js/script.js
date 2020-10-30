@@ -29,7 +29,7 @@ axios.get(API)
         });
         console.log(searchByNonMetal)
 
-        // Show filtered data in front end using map 
+        // Show filtered data in html using map 
         let elemental3 = searchByNonMetal.map(data => {
             return `<div class="card" style="width: 10rem;" id="${data.groupBlock}">
                     <h5>${data.atomicNumber}</h5>
@@ -196,31 +196,14 @@ function phosphorus() {
 
 
 // #add accordion mode
-$("#langCollapse").collapse('show');
-changeBtnColor();
-$("button[name='langCollapse']").addClass("btn btn-dark m-1");
-
-
-function changeBtnColor() {
-    $(".infoCollapse").removeClass("btn btn-dark m-1");
-    $(".infoCollapse").addClass("btn btn-light m-1");
-}
-
-
+$("#allCollapse").collapse('show');
 
 function toggleFunction(name) {
     // $("#langCollapse").collapse('toggle');
-    $(".collapse").collapse("hide");
-    changeBtnColor();
-    setTimeout(function () { openSelected(name) }, 360);
+    $(".collapse").collapse('toggle');
 }
 
 function openSelected(name) {
-    btnSelection = "button" + "[name=" + name + "]";
-    $(btnSelection).addClass("btn btn-dark m-1");
     selection = "#" + name;
     $(selection).collapse("toggle");
 }
-
-
-

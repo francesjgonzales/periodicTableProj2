@@ -109,6 +109,14 @@ td {
   text-align: center;
 } */
 
+.col-sm {
+  align-items: center;
+}
+
+#infoCollapse {
+  color: black;
+}
+
 #tableHead {
   margin: 20px;
   padding: 20px;
@@ -127,7 +135,6 @@ td {
   position: fixed;
   bottom: 20px;
   right: 20px;
-  background: #318ddc;
   background: #318ddc;
   width: 50px;
   height: 50px;
@@ -215,4 +222,7 @@ td {
 }
 [id*="alkali"] {
   background-color: rgb(254, 255, 115);
+}
+[id*="alkaline"] {
+  background-color: rgb(240, 240, 46);
 }
