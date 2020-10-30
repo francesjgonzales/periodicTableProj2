@@ -43,7 +43,7 @@ body,
   align-items: center;
 }
 
-#subHeader {
+.subHeader {
   font-size: 3rem;
   text-align: center;
   color: #318ddc;
@@ -57,6 +57,11 @@ body,
 .paraText,
 ul {
   font-size: 2rem;
+}
+
+.bodyText,
+ul {
+  font-size: 1.6rem;
 }
 
 .card-title {
