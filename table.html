@@ -73,15 +73,15 @@
 
 
     <!-- Periodic Table -->
-
     <div class='container' id='periodicTable'>
     <p id='subHeader'>Elements as Building Blocks</p>
       <p id='paraText' style='text-align: center;'>The periodic table is organized like a big grid.<br>
         Each element is placed in a specific location because of its atomic structure. As with any grid, the periodic table has rows (left to right) and columns (up and down). Each row and column has specific characteristics. 
       </p>
       <br>
+    </div>
 
-      <div class="container">
+    <div class="container">
         <div class="row">
           <div class="col">
             <div class="card" id="alkali metal">
@@ -113,13 +113,13 @@
             </div>
           </div>
         </div>
-      </div>
+    </div>
 
-      <div class='container'>
+    <div class='container'>
         <div class='col-sm'>
           <p id='paraText'>For example, magnesium (Mg) and calcium (Mg) are found in column two and share certain similarities while potassium (K) and calcium (Ca) from row four share different characteristics. Magnesium and sodium (Na) also share qualities because the are in the same period (similar electron configurations).</p>
         </div>
-      </div>
+    </div>
 
 
     
@@ -138,86 +138,165 @@
       </div>
     </div>
 
-    <!-- <div class='container'>
-      <div class='row'>
-        <div class='col-sm' id='diatomic'>Diatomic</div>
-        <div class='col-sm' id='nonmetal'>Nonmetal</div>
-        <div class='col-sm' id='noble'>Noble Gases</div>
-        <div class='col-sm' id='halogen'>Halogen</div>
-        <div class='col-sm' id='metalloid'>Metalloid</div>
-        <div class='col-sm' id='metal'>Metal</div>
-        <div class='col-sm' id='lanthanoid'>Lanthanoid</div>
-        <div class='col-sm' id='actinoid'>Actinoid</div>
-        <div class='col-sm' id='transition'>Transition Metal</div>
-        <div class='col-sm' id='alkali'>Alkali Metal</div>
-        <div class='col-sm' id='alkaline'>Alkaline earth metal</div>       
-      </div>
-    </div> -->
-
     <div class='container'>
       <div class='row'>
-        <button class='col-sm' id='diatomic' type="button" onClick="toggleFunction(this.name)" name="nonMetalCollapse" id="infoCollapse" style='color: black;'>Diatomic</button>
-
-        <button class='col-sm' id='nonmetal' type="button" onClick="toggleFunction(this.name)" name="langCollapse" id="infoCollapse" style='color: black;'>Nonmetal</button>
-
-        <button class='col-sm' id='noble' type="button" onClick="toggleFunction(this.name)" name="langCollapse" id="infoCollapse" style='color: black;'>Noble Gases</button>
-
-        <button class='col-sm' id='halogen' type="button" onClick="toggleFunction(this.name)" name="langCollapse" id="infoCollapse" style='color: black;'>Halogen</button>
-
-        <button class='col-sm' id='metalloid' type="button" onClick="toggleFunction(this.name)" name="langCollapse" id="infoCollapse" style='color: black;'>Metalloid</button>
-
-        <button class='col-sm' id='metal' type="button" onClick="toggleFunction(this.name)" name="langCollapse" id="infoCollapse" style='color: black;'>Metal</button>
-
-        <button class='col-sm' id='lanthanoid' type="button" onClick="toggleFunction(this.name)" name="langCollapse" id="infoCollapse" style='color: black;'>Lanthanoid</button>
-
-        <button class='col-sm' id='actinoid' type="button" onClick="toggleFunction(this.name)" name="langCollapse" id="infoCollapse" style='color: black;'>Actinoid</button>
-
-        <button class='col-sm' id='transition' type="button" onClick="toggleFunction(this.name)" name="langCollapse" id="infoCollapse" style='color: black;'>Transition Metal</button>
-
-        <button class='col-sm' id='alkali' type="button" onClick="toggleFunction(this.name)" name="langCollapse" id="infoCollapse" style='color: black;'>Alkali Metal</button>
-
-        <button class='col-sm' id='alkaline' type="button" onClick="toggleFunction(this.name)" name="langCollapse" id="infoCollapse" style='color: black;'>Alkaline earth metal</button>
-
-        <button class='btn btn-primary' type="button" onClick="toggleFunction(this.name)" name="allCollapse" style='color: black; background-color: #318ddc;'>All Elements</button>
-
+        <button class="infoCollapse btn btn-primary" style="color: black;" type="button" onClick="toggleFunction(this.name)" name="diatomicCollapse" id="diatomic">Diatomic</button>
+        <button class="infoCollapse btn btn-primary" type="button" onClick="toggleFunction(this.name)" name="nonMetalCollapse" id="nonmetal">Non Metal</button>
+        <button class="infoCollapse btn btn-primary" type="button" onClick="toggleFunction(this.name)" name="nobleGasesCollapse" id="noble">Noble Gases</button>
+        <button class="infoCollapse btn btn-primary" type="button" onClick="toggleFunction(this.name)" name="halogenCollapse" id="halogen">Halogen</button>
+        <button class="infoCollapse btn btn-primary" type="button" onClick="toggleFunction(this.name)" name="metalloidCollapse" id="metalloid">Metalloid</button>
+        <button class="infoCollapse btn btn-primary" type="button" onClick="toggleFunction(this.name)" name="metalCollapse" id="metal">Metal</button>
+        <button class="infoCollapse btn btn-primary" type="button" onClick="toggleFunction(this.name)" name="lanthanoidCollapse" id="lanthanoid">Lanthanoid</button>
+        <button class="infoCollapse btn btn-primary" type="button" onClick="toggleFunction(this.name)" name="lanthanoidCollapse" id="actinoid">Actinoid</button>
+        <button class="infoCollapse btn btn-primary" type="button" onClick="toggleFunction(this.name)" name="transitionMetalCollapse" id="transition metal" style='background-color:rgb(231, 231, 231);'>Transition Metal</button>
+        <button class="infoCollapse btn btn-primary" type="button" onClick="toggleFunction(this.name)" name="alkaliMetalCollapse" id="alkali metal">Alkali Metal</button>
+        <button class="infoCollapse btn btn-primary" type="button" onClick="toggleFunction(this.name)" name="alkaliMetalCollapse" id="alkali metal">Alkaline Earth Metal</button>
+        <button class="infoCollapse btn btn-primary" type="button" onClick="toggleFunction(this.name)" name="allCollapse" id="allElements">All Elements</button>
       </div>
 
     </div>
 
+    <!-- SHOW API DATA -->
     <div class='container'>
       <p id='subHeader'>Cards are sorted according to atomic number</p>
-      <!-- NONMETAL Elements shown -->
-      <div class='container' id="nonMetalCollapse">
-        <div class = 'flexbox-container' id='searchByGroupBlock'>
+
+      <!-- Diatomic Elements shown -->
+      <div class='collapse' id='diatomicCollapse'>
+        <div class = 'flexbox-container' id='searchByDiatomic'>
           <div class="card">
               <h5 id="card-number">15</h5>
               <h1 id="card-symbol">P</h1>
               <h3 id="card-name">PHOSPHORUS</h3>
           </div>
-        </div>
+        </div> 
       </div>
 
-      <!-- ALL Elements shown-->
-      <div class='collapse' id='allCollapse'>
-        <div class='container' >
-          <div class = 'flexbox-container' id='finalCard'>
-            <div class="card">
-                <h5 id="card-number">15</h5>
-                <h1 id="card-symbol">P</h1>
-                <h3 id="card-name">PHOSPHORUS</h3>
-            </div>
-          </div>   
-        </div>
+      <!-- Nonmetal Elements shown -->
+      <div class='collapse' id='nobleGasesCollapse'>
+        <div class = 'flexbox-container' id='searchByNobleGases'>
+          <div class="card">
+              <h5 id="card-number">15</h5>
+              <h1 id="card-symbol">P</h1>
+              <h3 id="card-name">PHOSPHORUS</h3>
+          </div>
+        </div> 
+      </div>
+
+      <!-- Noble Gases Elements shown -->
+      <div class='collapse' id='nonMetalCollapse'>
+        <div class = 'flexbox-container' id='searchByNonMetal'>
+          <div class="card">
+              <h5 id="card-number">15</h5>
+              <h1 id="card-symbol">P</h1>
+              <h3 id="card-name">PHOSPHORUS</h3>
+          </div>
+        </div> 
       </div>
       
+      <!-- Halogen Elements shown -->
+      <div class='collapse' id='halogenCollapse'>
+        <div class = 'flexbox-container' id='searchByHalogen'>
+          <div class="card">
+              <h5 id="card-number">15</h5>
+              <h1 id="card-symbol">P</h1>
+              <h3 id="card-name">PHOSPHORUS</h3>
+          </div>
+        </div> 
+      </div>
+      
+      <!-- Metalloid Elements shown -->
+      <div class='collapse' id='metalloidCollapse'>
+        <div class = 'flexbox-container' id='searchByMetalloid'>
+          <div class="card">
+              <h5 id="card-number">15</h5>
+              <h1 id="card-symbol">P</h1>
+              <h3 id="card-name">PHOSPHORUS</h3>
+          </div>
+        </div> 
+      </div>
+
+      <!-- Metal Elements shown -->
+      <div class='collapse' id='metalCollapse'>
+        <div class = 'flexbox-container' id='searchByMetal'>
+          <div class="card">
+              <h5 id="card-number">15</h5>
+              <h1 id="card-symbol">P</h1>
+              <h3 id="card-name">PHOSPHORUS</h3>
+          </div>
+        </div> 
+      </div>
+
+      <!-- Lanthanoid Elements shown -->
+      <div class='collapse' id='lanthanoidCollapse'>
+        <div class = 'flexbox-container' id='searchByLanthanoid'>
+          <div class="card">
+              <h5 id="card-number">15</h5>
+              <h1 id="card-symbol">P</h1>
+              <h3 id="card-name">PHOSPHORUS</h3>
+          </div>
+        </div> 
+      </div>
+
+      <!-- Actinoid Elements shown -->
+      <div class='collapse' id='actinoidCollapse'>
+        <div class = 'flexbox-container' id='searchByActinoid'>
+          <div class="card">
+              <h5 id="card-number">15</h5>
+              <h1 id="card-symbol">P</h1>
+              <h3 id="card-name">PHOSPHORUS</h3>
+          </div>
+        </div> 
+      </div>
+
+      <!-- Transition Metal Elements shown -->
+      <div class='collapse' id='transitionMetalCollapse'>
+        <div class = 'flexbox-container' id='searchByTransitionMetal'>
+          <div class="card">
+              <h5 id="card-number">15</h5>
+              <h1 id="card-symbol">P</h1>
+              <h3 id="card-name">PHOSPHORUS</h3>
+          </div>
+        </div> 
+      </div>
+
+      <!-- Alkali Metal Elements shown -->
+      <div class='collapse' id='alkaliMetalCollapse'>
+        <div class = 'flexbox-container' id='searchByAlkaliMetal'>
+          <div class="card">
+              <h5 id="card-number">15</h5>
+              <h1 id="card-symbol">P</h1>
+              <h3 id="card-name">PHOSPHORUS</h3>
+          </div>
+        </div> 
+      </div>
+
+      <!-- Alkali Earth Metal Elements shown -->
+      <div class='collapse' id='alkaliEarthMetalCollapse'>
+        <div class = 'flexbox-container' id='searchByAlkaliEarthMetal'>
+          <div class="card">
+              <h5 id="card-number">15</h5>
+              <h1 id="card-symbol">P</h1>
+              <h3 id="card-name">PHOSPHORUS</h3>
+          </div>
+        </div> 
+      </div>
+      
+      <!-- ALL Elements shown-->
+      <div class='collapse' id='allCollapse'>
+        <div class = 'flexbox-container' id='finalCard'>
+          <div class="card">
+              <h5 id="card-number">15</h5>
+              <h1 id="card-symbol">P</h1>
+              <h3 id="card-name">PHOSPHORUS</h3>
+          </div>
+        </div> 
+      </div>
+
 
     </div>
 
-        
-      <!-- START test  -->
-    
 
-      <!-- END -->
+        
 
       
     <div class='container'>

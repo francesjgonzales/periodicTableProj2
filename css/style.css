@@ -196,33 +196,43 @@ td {
 }
 
 #nonmetal {
+  color: black;
   background-color: rgb(232, 208, 255);
 }
 
-[id*="noble"] {
+[id*="noble gas"] {
+  color: black;
   background-color: rgb(248, 153, 106);
 }
 #halogen {
+  color: black;
   background-color: rgb(250, 166, 255);
 }
 #metalloid {
+  color: black;
   background-color: rgb(146, 219, 255);
 }
 #metal {
+  color: black;
   background-color: lightgrey;
 }
 #lanthanoid {
+  color: black;
   background-color: rgb(210, 255, 145);
 }
 #actinoid {
+  color: black;
   background-color: rgb(184, 255, 145);
 }
-[id*="transition"] {
+[id*="transition metal"] {
+  color: black;
   background-color: rgb(231, 231, 231);
 }
-[id*="alkali"] {
+[id*="alkali metal"] {
+  color: black;
   background-color: rgb(254, 255, 115);
 }
-[id*="alkaline"] {
+[id*="alkaline earth metal"] {
+  color: black;
   background-color: rgb(240, 240, 46);
 }
