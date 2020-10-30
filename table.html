@@ -142,7 +142,7 @@
       <div class='row'>
         <button class="infoCollapse btn btn-primary" style="color: black;" type="button" onClick="toggleFunction(this.name)" name="diatomicCollapse" id="diatomic">Diatomic</button>
         <button class="infoCollapse btn btn-primary" type="button" onClick="toggleFunction(this.name)" name="nonMetalCollapse" id="nonmetal">Non Metal</button>
-        <button class="infoCollapse btn btn-primary" type="button" onClick="toggleFunction(this.name)" name="nobleGasesCollapse" id="noble">Noble Gases</button>
+        <button class="infoCollapse btn btn-primary" type="button" onClick="toggleFunction(this.name)" name="nobleGasesCollapse" id="noble gas">Noble Gases</button>
         <button class="infoCollapse btn btn-primary" type="button" onClick="toggleFunction(this.name)" name="halogenCollapse" id="halogen">Halogen</button>
         <button class="infoCollapse btn btn-primary" type="button" onClick="toggleFunction(this.name)" name="metalloidCollapse" id="metalloid">Metalloid</button>
         <button class="infoCollapse btn btn-primary" type="button" onClick="toggleFunction(this.name)" name="metalCollapse" id="metal">Metal</button>
@@ -150,7 +150,7 @@
         <button class="infoCollapse btn btn-primary" type="button" onClick="toggleFunction(this.name)" name="lanthanoidCollapse" id="actinoid">Actinoid</button>
         <button class="infoCollapse btn btn-primary" type="button" onClick="toggleFunction(this.name)" name="transitionMetalCollapse" id="transition metal" style='background-color:rgb(231, 231, 231);'>Transition Metal</button>
         <button class="infoCollapse btn btn-primary" type="button" onClick="toggleFunction(this.name)" name="alkaliMetalCollapse" id="alkali metal">Alkali Metal</button>
-        <button class="infoCollapse btn btn-primary" type="button" onClick="toggleFunction(this.name)" name="alkaliMetalCollapse" id="alkali metal">Alkaline Earth Metal</button>
+        <button class="infoCollapse btn btn-primary" type="button" onClick="toggleFunction(this.name)" name="alkalineCollapse" id="alkaline">Alkaline Earth Metal</button>
         <button class="infoCollapse btn btn-primary" type="button" onClick="toggleFunction(this.name)" name="allCollapse" id="allElements">All Elements</button>
       </div>
 
@@ -269,10 +269,10 @@
           </div>
         </div> 
       </div>
-
-      <!-- Alkali Earth Metal Elements shown -->
-      <div class='collapse' id='alkaliEarthMetalCollapse'>
-        <div class = 'flexbox-container' id='searchByAlkaliEarthMetal'>
+      
+      <!-- alkaline earth metal Elements shown -->
+      <div class='collapse' id='alkalineCollapse'>
+        <div class = 'flexbox-container' id='searchByAlkaline'>
           <div class="card">
               <h5 id="card-number">15</h5>
               <h1 id="card-symbol">P</h1>
@@ -280,6 +280,8 @@
           </div>
         </div> 
       </div>
+
+
       
       <!-- ALL Elements shown-->
       <div class='collapse' id='allCollapse'>
@@ -326,19 +328,29 @@
         <p id='subHeader'>Young Chemist</h3>
           <p id='paraText' style='text-align: center;'>Make these fun experiments that you can do at home.</p>
 
-          <div class='row'>
-            <div class=col-4>
-                <iframe width="400" height="315" src="https://www.youtube.com/embed/4MHn9Q5NtdY" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            </div>    
-
-            <div class='col-4'>
-                <iframe width="400" height="315" src="https://www.youtube.com/embed/K0PJ4LiWl8w" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            </div>
-
-            <div class = 'col-4'>
-                <iframe width="400" height="315" src="https://www.youtube.com/embed/McVpXiSttnU" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          <div class="container">
+            <div class="row">
+              <div class="col-sm">
+                <div class="embed-responsive embed-responsive-4by3">
+                  <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/4MHn9Q5NtdY" allowfullscreen></iframe>
+                </div>
+              </div>
+              <div class="col-sm">
+                <div class="embed-responsive embed-responsive-4by3">
+                  <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/K0PJ4LiWl8w" allowfullscreen></iframe>
+                </div>
+              </div>
+              <div class="col-sm">
+                <div class="embed-responsive embed-responsive-4by3">
+                  <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/McVpXiSttnU" allowfullscreen></iframe>
+                </div>
+              </div>
             </div>
           </div>
+
+
+
+
 
     </div>
     

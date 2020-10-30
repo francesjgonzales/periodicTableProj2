@@ -227,15 +227,15 @@ axios.get(API)
 
 
         // #11Alkali Earth Metal START search filter
-        let filterlAlkalineEarthMetal = allData.filter(function (alkalineEarthMetal) {
-            if (alkalineEarthMetal.groupBlock === 'alkaline earth metal') {
+        let filterlAlkaline = allData.filter(function (alkaline) {
+            if (alkaline.groupBlock === 'alkaline earth metal') {
                 return true;
             }
         });
-        console.log(filterlAlkalineEarthMetal)
+        console.log(filterlAlkaline)
 
         // Show filtered data in html using map 
-        let elemental12 = filterlAlkalineEarthMetal.map(data => {
+        let elemental12 = filterlAlkaline.map(data => {
             return `<div class="card" style="width: 10rem;" id="${data.groupBlock}">
                     <h5>${data.atomicNumber}</h5>
                     <h2>${data.symbol}</h2>
@@ -243,7 +243,7 @@ axios.get(API)
                     </div>`
         }).join("")
 
-        document.getElementById('searchByAlkaliEarthMetal').innerHTML = elemental12
+        document.getElementById('searchByAlkaline').innerHTML = elemental12
 
         //END
 

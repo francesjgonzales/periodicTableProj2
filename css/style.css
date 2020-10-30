@@ -228,11 +228,11 @@ td {
   color: black;
   background-color: rgb(231, 231, 231);
 }
-[id*="alkali metal"] {
+[id*="alkali"] {
   color: black;
   background-color: rgb(254, 255, 115);
 }
-[id*="alkaline earth metal"] {
+[id*="alkaline"] {
   color: black;
   background-color: rgb(240, 240, 46);
 }
