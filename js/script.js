@@ -261,7 +261,6 @@ axios.get(API)
 
         //END
 
-
         // START ELEMENT HISTORY
         // let elemental2 = allData.map(data => {
         //     return `<div class="card" id="${data.groupBlock}" style="width: 45rem">
@@ -275,6 +274,7 @@ axios.get(API)
 
         // document.getElementById('showMore').innerHTML = elemental2
         // END
+
 
         // SEARCH BAR KEY
         let searchBar = document.getElementById('searchBar');
@@ -309,7 +309,25 @@ axios.get(API)
         document.getElementById('elementList').innerHTML = searchElement
         // END
 
+        // function myFunction() {
+        //     let i;
+        //     for (i = 0; i < 8; i++) {
+        //         if (i === 3) {
+        //             break;
+        //         }
+        //         `<div class="card" id="${data.groupBlock}" style="width: 25rem">
+        //                 <h1 id="card-symbol">${data.symbol}</h1>
+        //                 <h3 id="card-name">${data.name}</h3>
+        //                 <h5 id="card-groupBlock">${data.groupBlock}</h5>
+        //                 <h5 id="facts">Facts: ${data.facts}</h5>
+        //                 <h5 id="yearDiscovered">Year Discovered: ${data.yearDiscovered}</h5>
+        //                 </div>`
+        //     }
+        //     document.getElementById('hydroCollapse').innerHTML = 
+        // }
+
     });
+
 
 
 axios.get('https://periodictable.p.rapidapi.com/?rapidapi-key=df774794c4mshb53d706f8e64e5cp1f2e62jsn27e7fe71a7d2')
@@ -331,7 +349,6 @@ axios.get('https://periodictable.p.rapidapi.com/?rapidapi-key=df774794c4mshb53d7
         }
         console.log(error.config);
     });
-
 
 
 
@@ -372,68 +389,3 @@ function openSelected(name) {
     selection = "#" + name;
     $(selection).collapse("toggle");
 }
-
-
-
-
-// ==== index ===
-function hydrogen() {
-    var x = document.getElementById("hydrogen");
-    if (x.style.display === "none") {
-        x.style.display = "block";
-    } else {
-        x.style.display = "none";
-    }
-}
-function carbon() {
-    var x = document.getElementById("carbon");
-    if (x.style.display === "none") {
-        x.style.display = "block";
-    } else {
-        x.style.display = "none";
-    }
-}
-function oxygen() {
-    var x = document.getElementById("oxygen");
-    if (x.style.display === "none") {
-        x.style.display = "block";
-    } else {
-        x.style.display = "none";
-    }
-}
-function nitrogen() {
-    var x = document.getElementById("nitrogen");
-    if (x.style.display === "none") {
-        x.style.display = "block";
-    } else {
-        x.style.display = "none";
-    }
-}
-function calcium() {
-    var x = document.getElementById("calcium");
-    if (x.style.display === "none") {
-        x.style.display = "block";
-    } else {
-        x.style.display = "none";
-    }
-}
-function calcium() {
-    var x = document.getElementById("calcium");
-    if (x.style.display === "none") {
-        x.style.display = "block";
-    } else {
-        x.style.display = "none";
-    }
-}
-
-function phosphorus() {
-    var x = document.getElementById("phosphorus");
-    if (x.style.display === "none") {
-        x.style.display = "block";
-    } else {
-        x.style.display = "none";
-    }
-}
-
-
-// ADD modal
