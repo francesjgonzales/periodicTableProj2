@@ -6,10 +6,6 @@ axios.get(API)
         let allData = response.data;
         console.log(allData)
 
-        allData.forEach((data) => {
-            console.log(data.history)
-        });
-
         // #1Diatomic START search filter
         let filterDiatomic = allData.filter(function (diatomic) {
             if (diatomic.groupBlock === 'diatomic') {
@@ -276,7 +272,7 @@ axios.get(API)
                     </div>`
         }).join("")
 
-        document.getElementById('allCollapse').innerHTML = elemental2
+        document.getElementById('showMore').innerHTML = elemental2
 
     });
 
@@ -405,8 +401,4 @@ function phosphorus() {
 }
 
 
-// hover each element's history
-container.addEventListener('mouseenter', () => console.log('Mouse enter'));
-container.addEventListener('mouseleave', () => console.log('Mouse enter'));
-
-
+// ADD SEARCH Bar

@@ -200,7 +200,8 @@ td {
   background-color: rgb(232, 208, 255);
 }
 
-[id*="noble"] {
+#noble,
+[id*="noble gas"] {
   color: black;
   background-color: rgb(248, 153, 106);
 }
@@ -230,17 +231,20 @@ td {
   background-color: rgb(184, 255, 145);
 }
 
-[id*="transition"] {
+#transition,
+[id*="transition metal"] {
   color: black;
   background-color: rgb(231, 231, 231);
 }
 
-[id*="alkali"] {
+#alkali,
+[id*="alkali metal"] {
   color: black;
   background-color: rgb(254, 255, 115);
 }
 
-[id*="alkaline"] {
+#alkaline,
+[id*="alkaline earth metal"] {
   color: black;
   background-color: rgb(240, 240, 46);
 }
