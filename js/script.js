@@ -262,17 +262,52 @@ axios.get(API)
         //END
 
 
-        // ELEMENT HISTORY
-        let elemental2 = allData.map(data => {
-            return `<div class="card" id="${data.groupBlock}" style="width: 45rem">
-                    <h1 id="card-symbol">${data.symbol}</h1>
-                    <h3 id="card-name">${data.name}</h3>
-                    <h5 id="card-groupBlock">${data.groupBlock}</h5>
-                    <p id="history">${data.history}</p>
-                    </div>`
+        // START ELEMENT HISTORY
+        // let elemental2 = allData.map(data => {
+        //     return `<div class="card" id="${data.groupBlock}" style="width: 45rem">
+        //             <h1 id="card-symbol">${data.symbol}</h1>
+        //             <h3 id="card-name">${data.name}</h3>
+        //             <h5 id="card-groupBlock">Group Block: ${data.groupBlock}</h5>
+        //             <p id="facts">Facts: ${data.facts}</p>
+        //             <p id="yearDiscovered">Year Discovered: ${data.yearDiscovered}</p>
+        //             </div>`
+        // }).join("")
+
+        // document.getElementById('showMore').innerHTML = elemental2
+        // END
+
+        // SEARCH BAR KEY
+        let searchBar = document.getElementById('searchBar');
+        let showElements = [];
+
+        searchBar.addEventListener('keyup', (e) => {
+            let searchString = e.target.value.toLowerCase();
+
+            let filteredElements = allData.filter((element) => {
+                return (
+                    element.name.toLowerCase().includes(searchString) ||
+                    element.groupBlock.toLowerCase().includes(searchString)
+                );
+            });
+            showElements(filteredElements)
+        });
+
+
+
+        // SEARCH BAR
+
+        let searchElement = allData.map(data => {
+            return `<div class="card" id="${data.groupBlock}" style="width: 25rem">
+                        <h1 id="card-symbol">${data.symbol}</h1>
+                        <h3 id="card-name">${data.name}</h3>
+                        <h5 id="card-groupBlock">${data.groupBlock}</h5>
+                        <h5 id="facts">Facts: ${data.facts}</h5>
+                        <h5 id="yearDiscovered">Year Discovered: ${data.yearDiscovered}</h5>
+                        </div>`
         }).join("")
 
-        document.getElementById('showMore').innerHTML = elemental2
+        document.getElementById('elementList').innerHTML = searchElement
+        // END
 
     });
 
@@ -401,4 +436,4 @@ function phosphorus() {
 }
 
 
-// ADD SEARCH Bar
+// ADD modal
