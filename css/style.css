@@ -54,7 +54,7 @@ body,
   text-align: center;
 }
 
-#paraText,
+.paraText,
 ul {
   font-size: 2rem;
 }
@@ -203,7 +203,6 @@ td {
 [id*="noble"] {
   color: black;
   background-color: rgb(248, 153, 106);
-  display: inline-block;
 }
 
 #halogen {
@@ -234,13 +233,11 @@ td {
 [id*="transition"] {
   color: black;
   background-color: rgb(231, 231, 231);
-  display: inline-block;
 }
 
 [id*="alkali"] {
   color: black;
   background-color: rgb(254, 255, 115);
-  display: inline-block;
 }
 
 [id*="alkaline"] {

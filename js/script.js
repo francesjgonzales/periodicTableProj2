@@ -6,6 +6,10 @@ axios.get(API)
         let allData = response.data;
         console.log(allData)
 
+        allData.forEach((data) => {
+            console.log(data.history)
+        });
+
         // #1Diatomic START search filter
         let filterDiatomic = allData.filter(function (diatomic) {
             if (diatomic.groupBlock === 'diatomic') {
@@ -262,8 +266,7 @@ axios.get(API)
         //END
 
 
-
-
+        // ELEMENT HISTORY
         let elemental2 = allData.map(data => {
             return `<div class="card" id="${data.groupBlock}" style="width: 45rem">
                     <h1 id="card-symbol">${data.symbol}</h1>
@@ -273,7 +276,7 @@ axios.get(API)
                     </div>`
         }).join("")
 
-        document.getElementById('showMore').innerHTML = elemental2
+        document.getElementById('allCollapse').innerHTML = elemental2
 
     });
 
@@ -342,7 +345,7 @@ function openSelected(name) {
 
 
 
-
+// ==== index ===
 function hydrogen() {
     var x = document.getElementById("hydrogen");
     if (x.style.display === "none") {
@@ -400,3 +403,10 @@ function phosphorus() {
         x.style.display = "none";
     }
 }
+
+
+// hover each element's history
+container.addEventListener('mouseenter', () => console.log('Mouse enter'));
+container.addEventListener('mouseleave', () => console.log('Mouse enter'));
+
+
