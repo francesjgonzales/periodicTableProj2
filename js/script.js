@@ -4,7 +4,105 @@ axios.get(API)
     .then(function (response) {
 
         let allData = response.data;
-        console.log(allData)
+
+        // modal Sodium
+        let sod = allData[10];
+
+        document.getElementById('sodium').innerHTML =
+            `<div class="modal-dialog modal-lg">
+        <div class="modal-content">
+        <div class='modal-footer'>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+        <span aria-hidden="true">&times;</span></button>
+        </div>
+        <div class='modal-body' style='margin: 2em;'>
+        <div>
+                <h1 class='card-symbol'>${sod.symbol}</h1>
+                <h3 class='card-name'>${sod.name}</h3>
+                <h5 class='card-groupBlock'>${sod.groupBlock}</h5>
+                <h5 class='card-facts'>Facts: ${sod.facts}</h5>
+                <h5 class='card-yearDiscovered'>Year Discovered: ${sod.yearDiscovered}</h5>
+                <h5 class='card-history'>History: ${sod.history}</h5>
+                </div>
+                </div>
+        </div>
+        </div>
+        </div>`
+
+
+        // modal Magnesium
+        let magnes = allData[11];
+
+        document.getElementById('magnesium').innerHTML =
+            `<div class="modal-dialog modal-lg">
+        <div class="modal-content">
+        <div class='modal-footer'>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+        <span aria-hidden="true">&times;</span></button>
+        </div>
+        <div class='modal-body' style='margin: 2em;'>
+        <div>
+                <h1 class='card-symbol'>${magnes.symbol}</h1>
+                <h3 class='card-name'>${magnes.name}</h3>
+                <h5 class='card-groupBlock'>${magnes.groupBlock}</h5>
+                <h5 class='card-facts'>Facts: ${magnes.facts}</h5>
+                <h5 class='card-yearDiscovered'>Year Discovered: ${magnes.yearDiscovered}</h5>
+                <h5 class='card-history'>History: ${magnes.history}</h5>
+                </div>
+                </div>
+        </div>
+        </div>
+        </div>`
+
+
+        // modal Calcium
+        let calc = allData[19];
+
+        document.getElementById('calcium').innerHTML =
+            `<div class="modal-dialog modal-lg">
+        <div class="modal-content">
+        <div class='modal-footer'>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+        <span aria-hidden="true">&times;</span></button>
+        </div>
+        <div class='modal-body' style='margin: 2em;'>
+        <div>
+                <h1 class='card-symbol'>${calc.symbol}</h1>
+                <h3 class='card-name'>${calc.name}</h3>
+                <h5 class='card-groupBlock'>${calc.groupBlock}</h5>
+                <h5 class='card-facts'>Facts: ${calc.facts}</h5>
+                <h5 class='card-yearDiscovered'>Year Discovered: ${calc.yearDiscovered}</h5>
+                <h5 class='card-history'>History: ${calc.history}</h5>
+                </div>
+                </div>
+        </div>
+        </div>
+        </div>`
+
+
+        // modal Potassium
+        let potassium = allData[18];
+
+        document.getElementById('potass').innerHTML =
+            `<div class="modal-dialog modal-lg">
+        <div class="modal-content">
+        <div class='modal-footer'>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+        <span aria-hidden="true">&times;</span></button>
+        </div>
+        <div class='modal-body' style='margin: 2em;'>
+        <div>
+                <h1 class='card-symbol'>${potassium.symbol}</h1>
+                <h3 class='card-name'>${potassium.name}</h3>
+                <h5 class='card-groupBlock'>${potassium.groupBlock}</h5>
+                <h5 class='card-facts'>Facts: ${potassium.facts}</h5>
+                <h5 class='card-yearDiscovered'>Year Discovered: ${potassium.yearDiscovered}</h5>
+                <h5 class='card-history'>History: ${potassium.history}</h5>
+                </div>
+                </div>
+        </div>
+        </div>
+        </div>`
 
         // #2Nonmetal START search filter
         let filterNonMetal = allData.filter(function (nonMetal) {
@@ -12,7 +110,6 @@ axios.get(API)
                 return true;
             }
         });
-        console.log(filterNonMetal)
 
         // Show filtered data in html using map 
         let elemental3 = filterNonMetal.map(data => {
@@ -34,7 +131,6 @@ axios.get(API)
                 return true;
             }
         });
-        console.log(filterNobleGases)
 
         // Show filtered data in html using map 
         let elemental4 = filterNobleGases.map(data => {
@@ -56,7 +152,6 @@ axios.get(API)
                 return true;
             }
         });
-        console.log(filterHalogen)
 
         // Show filtered data in html using map 
         let elemental5 = filterHalogen.map(data => {
@@ -78,7 +173,6 @@ axios.get(API)
                 return true;
             }
         });
-        console.log(filterMetalloid)
 
         // Show filtered data in html using map 
         let elemental6 = filterMetalloid.map(data => {
@@ -100,7 +194,6 @@ axios.get(API)
                 return true;
             }
         });
-        console.log(filterMetal)
 
         // Show filtered data in html using map 
         let elemental7 = filterMetal.map(data => {
@@ -122,7 +215,6 @@ axios.get(API)
                 return true;
             }
         });
-        console.log(filterlanthanoid)
 
         // Show filtered data in html using map 
         let elemental8 = filterlanthanoid.map(data => {
@@ -144,7 +236,6 @@ axios.get(API)
                 return true;
             }
         });
-        console.log(filterlActinoid)
 
         // Show filtered data in html using map 
         let elemental9 = filterlActinoid.map(data => {
@@ -166,7 +257,6 @@ axios.get(API)
                 return true;
             }
         });
-        console.log(filterlTransitionMetal)
 
         // Show filtered data in html using map 
         let elemental10 = filterlTransitionMetal.map(data => {
@@ -188,7 +278,6 @@ axios.get(API)
                 return true;
             }
         });
-        console.log(filterlAlkaliMetal)
 
         // Show filtered data in html using map 
         let elemental11 = filterlAlkaliMetal.map(data => {
@@ -210,7 +299,6 @@ axios.get(API)
                 return true;
             }
         });
-        console.log(filterlAlkaline)
 
         // Show filtered data in html using map 
         let elemental12 = filterlAlkaline.map(data => {
@@ -239,41 +327,8 @@ axios.get(API)
 
         //END
 
-        // START ELEMENT HISTORY
-        // let elemental2 = allData.map(data => {
-        //     return `<div class="card" id="${data.groupBlock}" style="width: 45rem">
-        //             <h1 id="card-symbol">${data.symbol}</h1>
-        //             <h3 id="card-name">${data.name}</h3>
-        //             <h5 id="card-groupBlock">Group Block: ${data.groupBlock}</h5>
-        //             <p id="facts">Facts: ${data.facts}</p>
-        //             <p id="yearDiscovered">Year Discovered: ${data.yearDiscovered}</p>
-        //             </div>`
-        // }).join("")
 
-        // document.getElementById('showMore').innerHTML = elemental2
-        // END
-
-
-        // SEARCH BAR KEY
-        let searchBar = document.getElementById('searchBar');
-        let showElements = [];
-
-        searchBar.addEventListener('keyup', (e) => {
-            let searchString = e.target.value.toLowerCase();
-
-            let filteredElements = allData.filter((element) => {
-                return (
-                    element.name.toLowerCase().includes(searchString) ||
-                    element.groupBlock.toLowerCase().includes(searchString)
-                );
-            });
-            showElements(filteredElements)
-        });
-
-
-
-        // SEARCH BAR
-
+        // ALL ELEMENTS 
         let searchElement = allData.map(data => {
             return `<div class="card" id="${data.groupBlock}" style="width: 25rem">
                         <h1 id="card-symbol">${data.symbol}</h1>
@@ -287,83 +342,65 @@ axios.get(API)
         document.getElementById('elementList').innerHTML = searchElement
         // END
 
-        // function myFunction() {
-        //     let i;
-        //     for (i = 0; i < 8; i++) {
-        //         if (i === 3) {
-        //             break;
-        //         }
-        //         `<div class="card" id="${data.groupBlock}" style="width: 25rem">
-        //                 <h1 id="card-symbol">${data.symbol}</h1>
-        //                 <h3 id="card-name">${data.name}</h3>
-        //                 <h5 id="card-groupBlock">${data.groupBlock}</h5>
-        //                 <h5 id="facts">Facts: ${data.facts}</h5>
-        //                 <h5 id="yearDiscovered">Year Discovered: ${data.yearDiscovered}</h5>
-        //                 </div>`
-        //     }
-        //     document.getElementById('hydroCollapse').innerHTML = 
-        // }
 
-    });
+        axios.get('https://periodictable.p.rapidapi.com/?rapidapi-key=df774794c4mshb53d706f8e64e5cp1f2e62jsn27e7fe71a7d2')
+            .catch(function (error) {
+                if (error.response) {
+                    // The request was made and the server responded with a status code
+                    // that falls out of the range of 2xx
+                    console.log(error.response.data);
+                    console.log(error.response.status);
+                    console.log(error.response.headers);
+                } else if (error.request) {
+                    // The request was made but no response was received
+                    // `error.request` is an instance of XMLHttpRequest in the browser and an instance of
+                    // http.ClientRequest in node.js
+                    console.log(error.request);
+                } else {
+                    // Something happened in setting up the request that triggered an Error
+                    console.log('Error', error.message);
+                }
+                console.log(error.config);
+            });
 
 
 
-axios.get('https://periodictable.p.rapidapi.com/?rapidapi-key=df774794c4mshb53d706f8e64e5cp1f2e62jsn27e7fe71a7d2')
-    .catch(function (error) {
-        if (error.response) {
-            // The request was made and the server responded with a status code
-            // that falls out of the range of 2xx
-            console.log(error.response.data);
-            console.log(error.response.status);
-            console.log(error.response.headers);
-        } else if (error.request) {
-            // The request was made but no response was received
-            // `error.request` is an instance of XMLHttpRequest in the browser and an instance of
-            // http.ClientRequest in node.js
-            console.log(error.request);
-        } else {
-            // Something happened in setting up the request that triggered an Error
-            console.log('Error', error.message);
+        // ===== Scroll to Top ===== 
+        $(window).scroll(function () {
+            if ($(this).scrollTop() >= 50) {        // If page is scrolled more than 50px
+                $('#return-to-top').fadeIn(200);    // Fade in the arrow
+            } else {
+                $('#return-to-top').fadeOut(200);   // Else fade out the arrow
+            }
+        });
+        $('#return-to-top').click(function () {      // When arrow is clicked
+            $('body,html').animate({
+                scrollTop: 0                       // Scroll to top of body
+            }, 500);
+        });
+
+
+        // ===== add accordion mode ===== 
+        $("#nobleGasesCollapse").collapse('show');
+        changeBtnColor();
+        $("button[name='nobleGasesCollapse']").addClass("btn btn-primary");
+
+        function changeBtnColor() {
+            $(".infoCollapse").removeClass("btn btn-primary");
+            $(".infoCollapse").addClass("btn btn-primary");
         }
-        console.log(error.config);
+
+        function toggleFunction(name) {
+            $(".collapse").collapse('hide');
+            changeBtnColor();
+            setTimeout(function () { openSelected(name) }, 360);
+        }
+
+        function openSelected(name) {
+            btnSelection = "button" + "[name=" + name + "]";
+            $(btnSelection).addClass("btn btn-primary");
+            selection = "#" + name;
+            $(selection).collapse("toggle");
+        }
+
     });
-
-
-
-// ===== Scroll to Top ===== 
-$(window).scroll(function () {
-    if ($(this).scrollTop() >= 50) {        // If page is scrolled more than 50px
-        $('#return-to-top').fadeIn(200);    // Fade in the arrow
-    } else {
-        $('#return-to-top').fadeOut(200);   // Else fade out the arrow
-    }
-});
-$('#return-to-top').click(function () {      // When arrow is clicked
-    $('body,html').animate({
-        scrollTop: 0                       // Scroll to top of body
-    }, 500);
-});
-
-
-// ===== add accordion mode ===== 
-$("#allCollapse").collapse('show');
-changeBtnColor();
-$("button[name='allCollapse']").addClass("btn btn-primary");
-
-function changeBtnColor() {
-    $(".infoCollapse").removeClass("btn btn-primary");
-    $(".infoCollapse").addClass("btn btn-primary");
-}
-
-function toggleFunction(name) {
-    $(".collapse").collapse('hide');
-    changeBtnColor();
-    setTimeout(function () { openSelected(name) }, 360);
-}
-
-function openSelected(name) {
-    btnSelection = "button" + "[name=" + name + "]";
-    $(btnSelection).addClass("btn btn-primary");
-    selection = "#" + name;
-    $(selection).collapse("toggle");
-}

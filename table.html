@@ -88,6 +88,8 @@
               <h5 id="card-number">11</h5>
               <h1 id="card-symbol">Na</h1>
               <h3 id="card-name">Sodium</h3>
+              <!-- Button trigger modal -->
+              <button class="btn btn-primary" type="button" data-toggle="modal" data-target="#sodium">Check this out</button>
             </div>
           </div>
           <div class="col">
@@ -95,6 +97,8 @@
               <h5 id="card-number">12</h5>
               <h1 id="card-symbol">Mg</h1>
               <h3 id="card-name">Magnesium</h3>
+              <!-- Button trigger modal -->
+              <button class="btn btn-primary" type="button" data-toggle="modal" data-target="#magnesium">Check this out</button>
             </div>
           </div>
           <div class="w-100"></div>
@@ -103,13 +107,18 @@
               <h5 id="card-number">19</h5>
               <h1 id="card-symbol">K</h1>
               <h3 id="card-name">Potassium</h3>
+              <!-- Button trigger modal -->
+              <button class="btn btn-primary" type="button" data-toggle="modal" data-target="#potass">Check this out</button>
             </div>
+
           </div>
           <div class="col">
             <div class="card" id="alkali metal">
               <h5 id="card-number">20</h5>
               <h1 id="card-symbol">Ca</h1>
               <h3 id="card-name">Calcium</h3>
+              <!-- Button trigger modal -->
+              <button class="btn btn-primary" type="button" data-toggle="modal" data-target="#calcium">Check this out</button>
             </div>
           </div>
         </div>
@@ -136,6 +145,14 @@
         Color-coded elements are categorised to Group Blocks
       </div>
     </div>
+
+
+    <!-- modal info  -->
+    <div class='modal' id='sodium'></div>
+    <div class='modal' id='magnesium'></div>
+    <div class='modal' id='calcium'></div>
+    <div class='modal' id='potass'></div>
+
 
     <!-- accordion insert here -->
     <div class='container'>
@@ -169,16 +186,6 @@
     <div class='container'>
       <p style='text-align: center; font-size: large; font-weight: bold;'>Cards are sorted according to atomic number</p>
 
-      <!-- Diatomic Elements shown -->
-      <div class='collapse' id='diatomicCollapse'>
-        <div class = 'flexbox-container' id='searchByDiatomic'>
-          <div class="card">
-              <h5 id="card-number">15</h5>
-              <h1 id="card-symbol">P</h1>
-              <h3 id="card-name">PHOSPHORUS</h3>
-          </div>
-        </div> 
-      </div>
 
       <!-- Nonmetal Elements shown -->
       <div class='collapse' id='nobleGasesCollapse'>
@@ -307,28 +314,20 @@
     <div class='container'>
     <p class='subHeader'>More Information about each element</p>
 
+
+
+
+
+    
     <!-- START search bar for HISTORY -->
-    <div id="searchWrapper">
-      <input
-          type="text"
-          name="searchBar"
-          id="searchBar"
-          placeholder="Search an element"
-      />
-  </div>
+
     <ul id="elementList"></ul>
   
+
+    
     <!-- END -->
 
 
-    <!-- <div class='col-sm' id='showMore'>
-        <div class="card" style="width: 10rem">
-          <h1 id="card-symbol">1</h1>
-          <h3 id="card-name">Hydrogen</h3>
-          <h5 id="card-groupBlock">nonmetal</h5>
-          <p id="facts">"Element containing no neutron, Lightest element, Lightest gas in the atmosphere, Lowest b.p., Lightest radio-isotope (Tritium - <sup>3</sup><sub>1</sub>H), Element with minimum no. of isotopes"</p>
-        </div>
-    </div> -->
 
     </div>
     </div>
