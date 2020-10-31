@@ -124,14 +124,12 @@
         <br>
           <p class='subHeader'>If chemistry is the study of matter, what is matter? </p>
           <p class='bodyText'><br>
-      
             Matter is the stuff around you. Matter is the air you breathe, the water you drink, the ground you walk on, the flowers you smell, and the food you taste. Any object you can see, smell, or touch is made of matter. There are also very small pieces of matter that you can’t see or touch. Chemists use special equipment to study those little guys. Scientists theorize all of the matter we can observe makes up about 5% of the Universe. The rest is made of dark matter and dark energy.<br><br>
             
-            <p class='subHeader'>There are two main qualities of matter.  </p>
-                      
+            <p class='subHeader'>There are two main qualities of matter.  </p>        
             <p class='bodyText'><mark>Matter takes up space.</mark> Even the smallest particles and pieces of atoms take up some space. <mark>Matter also has a mass.</mark> Technically, mass is the amount of matter you have. For now, you can think of mass in terms of weight. You don’t need chemistry to tell you an elephant has a lot of mass, a butterfly has less mass, and an atom has even less mass. Holding an object will tell you the object’s weight and give you a good idea of its mass when compared to other objects.<br><br>
             
-              Just so you know, <mark>mass and weight are different.</mark> Mass is an amount of matter that is the same everywhere in the Universe. One kilogram of iron (Fe) will have the same mass on the Earth or the Moon. Weight is based on the gravity of the environment. That kilogram of iron will weigh more on the Earth because the Earth has a stronger gravity than the Moon. Since Jupiter is much larger than the Earth (stronger gravitational force), the weight of that iron on Jupiter will be much heavier. The mass will be the same.</p>
+            Just so you know, <mark>mass and weight are different.</mark> Mass is an amount of matter that is the same everywhere in the Universe. One kilogram of iron (Fe) will have the same mass on the Earth or the Moon. Weight is based on the gravity of the environment. That kilogram of iron will weigh more on the Earth because the Earth has a stronger gravity than the Moon. Since Jupiter is much larger than the Earth (stronger gravitational force), the weight of that iron on Jupiter will be much heavier. The mass will be the same.</p>
 
     </div>
 
@@ -146,7 +144,7 @@
             <div class="card-body">
               <h5 class="card-title">1</h5>
               <p class="card-text">H</p>
-              <h4 class="card-title">HYDROGEN</h4>
+              <h4 class="card-title">Hydrogen</h4>
               <button class="infoCollapse btn btn-primary" type="button" onClick="toggleFunction(this.name)" name="hydroCollapse">Check this out</button>
             </div>
           </div>
@@ -192,11 +190,17 @@
               <h5 class="card-title">15</h5>
               <p class="card-text">P</p>
               <h4 class="card-title">Phosphorus</h4>
-              <button class="infoCollapse btn btn-primary" type="button" onClick="toggleFunction(this.name)" name="phosphoCollapse">Check this out</button>
+              <!-- Button trigger modal -->
+              <button class="btn btn-primary" type="button" data-toggle="modal" data-target="#hydrogen">Check this out</button>
             </div>
           </div>
       </div>
     </div>
+
+    <!-- insert modal -->
+    <div class='modal' id='hydrogen'>
+    </div>
+   
 
 
     <div class='container3'>
@@ -207,7 +211,7 @@
       <br>
         <p class='subHeader'><mark>Atoms</mark> are the smallest and most basic units of matter that have the properties of an element.</p>
         <p class='bodyText'><br>
-           All atoms have the same basic parts <mark>(electrons, protons, and neutrons)</mark>, but they are arranged in different ways. Because they have different numbers of parts, atoms of each element have different masses. Hydrogen (H) has an average atomic mass of 1 while carbon (C) is about 12 and calcium (Ca) is about 40.<br><br>
+          All atoms have the same basic parts <mark>(electrons, protons, and neutrons)</mark>, but they are arranged in different ways. Because they have different numbers of parts, atoms of each element have different masses. Hydrogen (H) has an average atomic mass of 1 while carbon (C) is about 12 and calcium (Ca) is about 40.<br><br>
           
           You might say, “Why doesn’t chemistry focus on electrons? Shouldn’t chemists work with the smallest pieces of matter?” Yes, electrons are smaller than atoms and there are subatomic particles that are smaller than electrons. But those teeny-tiny particles don’t have the properties of an element. When the small parts are combined into atoms, chemists can start to see properties and patterns in their behavior.
           </p>  
@@ -259,7 +263,6 @@
     </div>
 
 
-    
     <!--footer-->
     <div class="footer-bottom">
       <div class="row">
@@ -270,11 +273,12 @@
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script> 
-    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <!-- <script src="https://unpkg.com/axios/dist/axios.min.js"></script> -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
     <script src="js/jquery.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script> -->
     <script src="js/script2.js"></script>
   </body>
 </html>
