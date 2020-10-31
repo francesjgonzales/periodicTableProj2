@@ -47,8 +47,8 @@ How I started.
      - Periodic Table
 
 **Medium-Fidelity mock up**
-![medium-fidelity](readme/hi-def2.jpg){:height="1000px" width="480px"}
-![medium-fidelity](readme/hi-def1.png){:height="1000px" width="351px"}
+![medium-fidelity](https://github.com/francesjgonzales/periodicTableProj2/blob/master/readme/hi-def2.jpg | width=480px)
+![medium-fidelity](https://github.com/francesjgonzales/periodicTableProj2/blob/master/readme/hi-def1.png | width=351px)
 
 #### UI
 
