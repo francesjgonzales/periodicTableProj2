@@ -24,6 +24,10 @@ body,
   font-family: "Roboto Mono", monospace;
 }
 
+.img-fluid {
+  width: 100%;
+}
+
 .container2 {
   margin: auto;
   padding: 60px;

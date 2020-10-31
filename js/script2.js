@@ -146,5 +146,3 @@ $('#return-to-top').click(function () {      // When arrow is clicked
 //     modal.find('.modal-title').text('New message to ' + recipient)
 //     modal.find('.modal-body input').val(recipient)
 // })
-
-$('body').scrollspy({ target: '#mainNav' });
