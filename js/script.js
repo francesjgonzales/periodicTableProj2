@@ -6,28 +6,6 @@ axios.get(API)
         let allData = response.data;
         console.log(allData)
 
-        // #1Diatomic START search filter
-        let filterDiatomic = allData.filter(function (diatomic) {
-            if (diatomic.groupBlock === 'diatomic') {
-                return true;
-            }
-        });
-        console.log(filterDiatomic)
-
-        // Show filtered data in html using map 
-        let elemental1 = filterDiatomic.map(data => {
-            return `<div class="card" style="width: 10rem;" id="${data.groupBlock}">
-                    <h5>${data.atomicNumber}</h5>
-                    <h2>${data.symbol}</h2>
-                    <h5>${data.name}</h5>
-                    </div>`
-        }).join("")
-
-        document.getElementById('searchByDiatomic').innerHTML = elemental1
-
-        //END
-
-
         // #2Nonmetal START search filter
         let filterNonMetal = allData.filter(function (nonMetal) {
             if (nonMetal.groupBlock === 'nonmetal') {
