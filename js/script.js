@@ -341,66 +341,66 @@ axios.get(API)
 
         document.getElementById('elementList').innerHTML = searchElement
         // END
-
-
-        axios.get('https://periodictable.p.rapidapi.com/?rapidapi-key=df774794c4mshb53d706f8e64e5cp1f2e62jsn27e7fe71a7d2')
-            .catch(function (error) {
-                if (error.response) {
-                    // The request was made and the server responded with a status code
-                    // that falls out of the range of 2xx
-                    console.log(error.response.data);
-                    console.log(error.response.status);
-                    console.log(error.response.headers);
-                } else if (error.request) {
-                    // The request was made but no response was received
-                    // `error.request` is an instance of XMLHttpRequest in the browser and an instance of
-                    // http.ClientRequest in node.js
-                    console.log(error.request);
-                } else {
-                    // Something happened in setting up the request that triggered an Error
-                    console.log('Error', error.message);
-                }
-                console.log(error.config);
-            });
-
-
-
-        // ===== Scroll to Top ===== 
-        $(window).scroll(function () {
-            if ($(this).scrollTop() >= 50) {        // If page is scrolled more than 50px
-                $('#return-to-top').fadeIn(200);    // Fade in the arrow
-            } else {
-                $('#return-to-top').fadeOut(200);   // Else fade out the arrow
-            }
-        });
-        $('#return-to-top').click(function () {      // When arrow is clicked
-            $('body,html').animate({
-                scrollTop: 0                       // Scroll to top of body
-            }, 500);
-        });
-
-
-        // ===== add accordion mode ===== 
-        $("#nobleGasesCollapse").collapse('show');
-        changeBtnColor();
-        $("button[name='nobleGasesCollapse']").addClass("btn btn-primary");
-
-        function changeBtnColor() {
-            $(".infoCollapse").removeClass("btn btn-primary");
-            $(".infoCollapse").addClass("btn btn-primary");
-        }
-
-        function toggleFunction(name) {
-            $(".collapse").collapse('hide');
-            changeBtnColor();
-            setTimeout(function () { openSelected(name) }, 360);
-        }
-
-        function openSelected(name) {
-            btnSelection = "button" + "[name=" + name + "]";
-            $(btnSelection).addClass("btn btn-primary");
-            selection = "#" + name;
-            $(selection).collapse("toggle");
-        }
-
     });
+
+axios.get('https://periodictable.p.rapidapi.com/?rapidapi-key=df774794c4mshb53d706f8e64e5cp1f2e62jsn27e7fe71a7d2')
+    .catch(function (error) {
+        if (error.response) {
+            // The request was made and the server responded with a status code
+            // that falls out of the range of 2xx
+            console.log(error.response.data);
+            console.log(error.response.status);
+            console.log(error.response.headers);
+        } else if (error.request) {
+            // The request was made but no response was received
+            // `error.request` is an instance of XMLHttpRequest in the browser and an instance of
+            // http.ClientRequest in node.js
+            console.log(error.request);
+        } else {
+            // Something happened in setting up the request that triggered an Error
+            console.log('Error', error.message);
+        }
+        console.log(error.config);
+    });
+
+
+
+// ===== Scroll to Top ===== 
+$(window).scroll(function () {
+    if ($(this).scrollTop() >= 50) {        // If page is scrolled more than 50px
+        $('#return-to-top').fadeIn(200);    // Fade in the arrow
+    } else {
+        $('#return-to-top').fadeOut(200);   // Else fade out the arrow
+    }
+});
+$('#return-to-top').click(function () {      // When arrow is clicked
+    $('body,html').animate({
+        scrollTop: 0                       // Scroll to top of body
+    }, 500);
+});
+
+
+// ===== add accordion mode ===== 
+$("#allCollapse").collapse('show');
+changeBtnColor();
+$("button[name='allCollapse']").addClass("btn btn-primary");
+
+function changeBtnColor() {
+    $(".infoCollapse").removeClass("btn btn-primary");
+    $(".infoCollapse").addClass("btn btn-primary");
+}
+
+function toggleFunction(name) {
+    $(".collapse").collapse('hide');
+    changeBtnColor();
+    setTimeout(function () { openSelected(name) }, 360);
+}
+
+function openSelected(name) {
+    btnSelection = "button" + "[name=" + name + "]";
+    $(btnSelection).addClass("btn btn-primary");
+    selection = "#" + name;
+    $(selection).collapse("toggle");
+}
+
+
