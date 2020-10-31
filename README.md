@@ -160,7 +160,8 @@ I used **Github** to create and deply my projects. Here are the step by step pro
 1. Save file from local drive.
 2. Go to source control, click the plus sign and type your meaningful commit message and click the tick sign to commit. 
 3. Go to terminal and type `git push`
-4. Go to your [github](https://github.com/) account to check.
+4. Go to [github](https://github.com/) account to check.
+5. Click on this [link](https://francesjgonzales.github.io/periodicTableProj2/) to view the deployed site
 
 
 ---
