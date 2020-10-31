@@ -24,7 +24,7 @@
     <a href="javascript:" id="return-to-top"><i class="fas fa-chevron-up"></i></a>
 
     <nav class="navbar navbar-expand-lg navbar-light" id='mainNav'>
-      <a class="navbar-brand ml-5" href="index.html"><img src="img/SFK-2.svg" alt="science-logo" height="28"/></a>
+      <a class="navbar-brand ml-5" href="index.html"><img src="img/SFK-2.svg" alt="science-logo" height="30px"/></a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -73,8 +73,8 @@
 
   <!-- intro to chemistry -->
     <div class="container2" id="chemistry">
-      <p id="textHeader">What is Chemistry?</p>
-        <p style='text-align: center;' id="paraText"> Chemistry is the scientific study of <mark>matter</mark>.</p>
+      <p class="textHeader">What is Chemistry?</p>
+        <p style='text-align: center;' class="paraText"> Chemistry is the scientific study of <mark>matter</mark>.</p>
 
       <div class="row">
         <div class="col-sm">
@@ -113,9 +113,9 @@
   <!-- endRow -->
 
 
-    <!-- Chemistry and Matter -->
+  <!-- Chemistry and Matter -->
     <div class='container3' id='matter'>
-      <p id='textHeader'>Chemistry and Matter</h3>
+      <p class='textHeader'>Chemistry and Matter</h3>
         <p class='paraText' style='text-align: center;'>The earth is one large mixture of <mark>gases</mark>, <mark>liquid</mark> and <mark>solid</mark>.</p>
         <img src="images2/Earth-illustrationByMacrovector.png" class="img-fluid" alt="earth-illustration-by-macrovector">
         <a href="http://www.freepik.com">Designed by macrovector / Freepik</a>
@@ -134,9 +134,9 @@
     </div>
 
 
-    <!-- Atom in Chemistry -->
+  <!-- Atom in Chemistry -->
     <div class='container3' id='atom'>
-      <p id='textHeader'>Atoms in Chemistry</p>
+      <p class='textHeader'>Atoms in Chemistry</p>
         <p class='paraText' style='text-align: center;'>You are made up of different types of Atoms</p>  
 
       <div class='container'>
@@ -146,7 +146,8 @@
               <h5 class="card-title">1</h5>
               <p class="card-text">H</p>
               <h4 class="card-title">Hydrogen</h4>
-              <button class="infoCollapse btn btn-primary" type="button" onClick="toggleFunction(this.name)" name="hydroCollapse">Check this out</button>
+              <!-- Button trigger modal -->
+              <button class="btn btn-primary" type="button" data-toggle="modal" data-target="#hydrogen">Check this out</button>
             </div>
           </div>
 
@@ -155,34 +156,38 @@
               <h5 class="card-title">6</h5>
               <p class="card-text">C</p>
               <h4 class="card-title">Carbon</h4>
-              <button class="infoCollapse btn btn-primary" type="button" onClick="toggleFunction(this.name)" name="carbonCollapse">Check this out</button>
+              <!-- Button trigger modal -->
+              <button class="btn btn-primary" type="button" data-toggle="modal" data-target="#carbon">Check this out</button>
             </div>
           </div>
 
-          <div class='card' id='oxygen'>
+          <div class='card' id='oxy'>
             <div class="card-body">
               <h5 class="card-title">8</h5>
               <p class="card-text">O</p>
               <h4 class="card-title">Oxygen</h4>
-              <button class="infoCollapse btn btn-primary" type="button" onClick="toggleFunction(this.name)" name="oxygenCollapse">Check this out</button>
+              <!-- Button trigger modal -->
+              <button class="btn btn-primary" type="button" data-toggle="modal" data-target="#oxygen">Check this out</button>
             </div>
           </div>
 
-          <div class='card' id='nitrogen'>
+          <div class='card' id='nitro'>
             <div class="card-body">
               <h5 class="card-title">7</h5>
               <p class="card-text">N</p>
               <h4 class="card-title">Nitrogen</h4>
-              <button class="infoCollapse btn btn-primary" type="button" onClick="toggleFunction(this.name)" name="nitroCollapse">Check this out</button>
+              <!-- Button trigger modal -->
+              <button class="btn btn-primary" type="button" data-toggle="modal" data-target="#nitrogen">Check this out</button>
             </div>
           </div>
 
-          <div class='card' id='calcium'>
+          <div class='card' id='cal'>
             <div class="card-body">
               <h5 class="card-title">20</h5>
               <p class="card-text">Ca</p>
               <h4 class="card-title">Calcium</h4>
-              <button class="infoCollapse btn btn-primary" type="button" onClick="toggleFunction(this.name)" name="calCollapse">Check this out</button>
+              <!-- Button trigger modal -->
+              <button class="btn btn-primary" type="button" data-toggle="modal" data-target="#calcium">Check this out</button>
             </div>
           </div>
 
@@ -192,7 +197,7 @@
               <p class="card-text">P</p>
               <h4 class="card-title">Phosphorus</h4>
               <!-- Button trigger modal -->
-              <button class="btn btn-primary" type="button" data-toggle="modal" data-target="#hydrogen">Check this out</button>
+              <button class="btn btn-primary" type="button" data-toggle="modal" data-target="#phosphorus">Check this out</button>
             </div>
           </div>
       </div>
@@ -201,13 +206,18 @@
       
     </div>
 
-    <!-- insert modal -->
-    <div class='modal' id='hydrogen'>
-    </div>
-   
+
+  <!-- insert modal -->
+    <div class='modal' id='hydrogen'></div>
+    <div class='modal' id='carbon'></div>
+    <div class='modal' id='oxygen'></div>
+    <div class='modal' id='nitrogen'></div>
+    <div class='modal' id='calcium'></div>
+    <div class='modal' id='phosphorus'></div>
 
 
-    <div class='container3'>
+  <!-- About Atoms   -->
+  <div class='container3'>
       <img src="images2/kids-diff-age.png" class="img-fluid" alt="Responsive image">
       <a href="http://www.freepik.com">Designed by pch.vector / Freepik</a>
       <br>
@@ -224,7 +234,7 @@
 
     <!-- What are Elements? -->
     <div class='container3' id='elements'>
-      <p id='textHeader'>What are Elements?</h3>
+      <p class='textHeader'>What are Elements?</h3>
         <p class='paraText' style='text-align: center;'>Elements are pieces of matter where all of the atoms have the same <mark>chemical properties</mark>.</p>
         <img src="images2/elements.png" class="img-fluid" alt="Responsive image">
         <br>
@@ -278,7 +288,7 @@
 
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script> 
     <!-- <script src="https://unpkg.com/axios/dist/axios.min.js"></script> -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <!-- <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script> -->
     <script src="js/jquery.min.js"></script>
     <script src="js/bootstrap.bundle.min.js"></script>
     <!-- <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
