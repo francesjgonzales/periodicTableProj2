@@ -47,8 +47,8 @@ How I started.
      - Periodic Table
 
 **Medium-Fidelity mock up**
-![medium-fidelity](../periodicTableProj2/readme/hi-def2.jpg)
-![medium-fidelity](../periodicTableProj2/hi-def1.png)
+![medium-fidelity](readme/hi-def2.jpg)
+![medium-fidelity](readme/hi-def1.png)
 
 #### UI
 
