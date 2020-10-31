@@ -24,6 +24,10 @@ body,
   font-family: "Roboto Mono", monospace;
 }
 
+.row {
+  align-content: center;
+}
+
 .img-fluid {
   width: 100%;
 }
