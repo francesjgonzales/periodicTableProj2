@@ -47,8 +47,8 @@ How I started.
      - Periodic Table
 
 **Medium-Fidelity mock up**
-![medium-fidelity](readme/hi-def2.jpg)
-![medium-fidelity](readme/hi-def1.png)
+![medium-fidelity](readme/hi-def2.jpg){:height="1000px" width="480px"}
+![medium-fidelity](readme/hi-def1.png){:height="1000px" width="351px"}
 
 #### UI
 
@@ -116,12 +116,18 @@ These instructions / questions where given and asked to him while browsing the w
 - Do you understand it is about?
 - Which part do you like the most in the website?
 
+Below is a detailed steps when user tested the website
+(readme/hi-def2.jpg)
+
+
 ---
 
 ## Deployment
 
 I used Visual Studio Code to work on my code locally.
+
 I used Github to deploy my project. I have separated folders for images, plug ins and readme files.
+# Creating new 
 
 ---
 
