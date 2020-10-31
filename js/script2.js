@@ -6,7 +6,7 @@ axios.get(API)
 
         let hydrogen = response.data[0];
         let carbon = response.data[5];
-        let oxygen = response.data[8];
+        let oxygen = response.data[7];
 
         let nitrogen = response.data[6];
         let calcium = response.data[19];
