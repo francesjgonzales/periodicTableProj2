@@ -46,9 +46,9 @@ How I started.
 
 **Medium-Fidelity mock up**
 
-![medium-fidelity](./readme/hi-def1.png =300x600)
+![medium-fidelity](readme/hi-def1.png =300x600)
 
-![medium-fidelity](./readme/hi-def2.jpg =300x800)
+![medium-fidelity](readme/hi-def2.jpg =300x800)
 
 #### UI
 
@@ -188,6 +188,30 @@ I used **Github** to create and deply my projects. Here are the step by step pro
 2. Content used - [Chem4Kids](http://www.chem4kids.com/) The grammar used is relatable and easy to understand.
 3. I referred to [w3schools](w3schools.com) for text styling and table format
 4. [Whitespaces in div id](https://stackoverflow.com/questions/9285451/handling-css-id-and-classes-with-spaces)
+5. Accordion - I want to credit my mentor, **Arif** for sharing his code on this. 
+```
+$("#allCollapse").collapse('show');
+changeBtnColor();
+$("button[name='allCollapse']").addClass("btn btn-primary");
+
+function changeBtnColor() {
+    $(".infoCollapse").removeClass("btn btn-primary");
+    $(".infoCollapse").addClass("btn btn-primary");
+}
+
+function toggleFunction(name) {
+    $(".collapse").collapse('hide');
+    changeBtnColor();
+    setTimeout(function () { openSelected(name) }, 360);
+}
+
+function openSelected(name) {
+    btnSelection = "button" + "[name=" + name + "]";
+    $(btnSelection).addClass("btn btn-primary");
+    selection = "#" + name;
+    $(selection).collapse("toggle");
+}
+```
 
 ### Media
 
