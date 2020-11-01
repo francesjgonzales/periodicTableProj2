@@ -46,9 +46,9 @@ How I started.
 
 **Medium-Fidelity mock up**
 
-![medium-fidelity](readme/hi-def1.png =300x600)
+![medium-fidelity](readme/hi-def1.png)
 
-![medium-fidelity](readme/hi-def2.jpg =300x800)
+![medium-fidelity](readme/hi-def2.jpg)
 
 #### UI
 
