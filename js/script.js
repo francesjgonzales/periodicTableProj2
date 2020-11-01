@@ -340,9 +340,9 @@ axios.get(API)
         }).join("")
 
         document.getElementById('elementList').innerHTML = searchElement
+        // console.log(searchElement)
         // END
 
-        console.log(searchElement)
     });
 
 axios.get('https://periodictable.p.rapidapi.com/?rapidapi-key=df774794c4mshb53d706f8e64e5cp1f2e62jsn27e7fe71a7d2')
