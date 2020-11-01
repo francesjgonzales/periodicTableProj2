@@ -329,6 +329,8 @@ axios.get(API)
 
 
         // ALL ELEMENTS 
+
+
         let searchElement = allData.map(data => {
             return `<div class="card" id="${data.groupBlock}" style="width: 25rem">
                         <h1 id="card-symbol">${data.symbol}</h1>
@@ -340,10 +342,11 @@ axios.get(API)
         }).join("")
 
         document.getElementById('elementList').innerHTML = searchElement
-        // console.log(searchElement)
+
         // END
 
     });
+
 
 axios.get('https://periodictable.p.rapidapi.com/?rapidapi-key=df774794c4mshb53d706f8e64e5cp1f2e62jsn27e7fe71a7d2')
     .catch(function (error) {
